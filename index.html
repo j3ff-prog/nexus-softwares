@@ -3,956 +3,827 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nexus Softwares — Web Development Company</title>
+
+  <title>Nexus Softwares — Web Development & IT Solutions, Kenya</title>
+  <meta name="description" content="Nexus Softwares builds fast, professional websites and web apps for businesses across Kenya and beyond. Based in Ruiru, Nairobi."/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://nexussoftwares.co.ke/"/>
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://nexussoftwares.co.ke/"/>
+  <meta property="og:title" content="Nexus Softwares — Web Development & IT Solutions, Kenya"/>
+  <meta property="og:description" content="Professional websites and web apps for Kenyan businesses. Fast delivery, clean code, real results."/>
+  <meta property="og:image" content="https://nexussoftwares.co.ke/og-image.jpg"/>
+  <meta property="og:locale" content="en_KE"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Nexus Softwares — Web Development, Kenya"/>
+  <meta name="twitter:description" content="Professional websites and web apps for Kenyan businesses."/>
+  <meta name="twitter:image" content="https://nexussoftwares.co.ke/og-image.jpg"/>
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%23111110' rx='24'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%231B3A6B'/%3E%3Cstop offset='100%25' stop-color='%232B5FA8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='200,40 340,120 340,280 200,360 60,280 60,120' fill='url(%23g)'/%3E%3Cpolygon points='200,62 318,132 318,268 200,338 82,268 82,132' fill='%23111110'/%3E%3Crect x='126' y='142' width='26' height='112' rx='2' fill='url(%23g)'/%3E%3Crect x='248' y='142' width='26' height='112' rx='2' fill='url(%23g)'/%3E%3Cpolygon points='126,142 152,142 274,254 248,254 128,142' fill='url(%23g)'/%3E%3C/svg%3E"/>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Nexus Softwares",
+    "url": "https://nexussoftwares.co.ke",
+    "description": "Web development and IT consultancy based in Ruiru, Kenya.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ruiru",
+      "addressRegion": "Kiambu County",
+      "addressCountry": "KE"
+    },
+    "telephone": "+254753223309",
+    "email": "jeff.006760@gmail.com",
+    "areaServed": ["Kenya", "East Africa"],
+    "serviceType": ["Web Development", "Landing Pages", "Business Websites", "Web Applications", "Social Media Management"],
+    "founder": { "@type": "Person", "name": "Jeff Wamakima" }
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:       #020C1B;
-      --bg2:      #061424;
-      --bg3:      #0A1E35;
-      --cyan:     #00E5FF;
-      --blue:     #0066FF;
-      --text:     #E8F4FF;
-      --muted:    #5A7A9A;
-      --border:   rgba(0,229,255,0.12);
-      --glow:     0 0 30px rgba(0,229,255,0.18);
+      --bg:       #F7F6F3;
+      --surface:  #EEECEA;
+      --ink:      #111110;
+      --mid:      #6B6B67;
+      --rule:     #D8D6D1;
+      --accent:   #1B3A6B;
+      --white:    #FFFFFF;
     }
 
     html { scroll-behavior: smooth; }
 
     body {
       background: var(--bg);
-      color: var(--text);
-      font-family: 'DM Sans', sans-serif;
+      color: var(--ink);
+      font-family: 'Inter', sans-serif;
       font-size: 16px;
-      line-height: 1.7;
+      line-height: 1.6;
       overflow-x: hidden;
     }
 
-    /* ── NOISE TEXTURE OVERLAY ── */
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-      pointer-events: none;
-      z-index: 0;
-      opacity: 0.4;
+    .skip-link {
+      position: absolute; top: -999px; left: -999px;
+      background: var(--accent); color: var(--white);
+      padding: 8px 16px; font-weight: 600; z-index: 9999;
+      text-decoration: none;
     }
+    .skip-link:focus { top: 8px; left: 8px; }
 
     /* ── NAV ── */
     nav {
-      position: fixed; top: 0; left: 0; right: 0;
-      z-index: 100;
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       display: flex; align-items: center; justify-content: space-between;
-      padding: 18px 60px;
-      background: rgba(2,12,27,0.85);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border);
+      padding: 0 48px;
+      height: 64px;
+      background: var(--bg);
+      border-bottom: 1px solid var(--rule);
     }
     .nav-logo {
-      display: flex; align-items: center; gap: 12px;
-      text-decoration: none;
+      display: flex; align-items: center; gap: 10px;
+      text-decoration: none; color: var(--ink);
     }
-    .nav-logo img { width: 36px; height: 36px; }
-    .nav-logo span {
-      font-family: 'Syne', sans-serif;
-      font-weight: 700;
+    .nav-logo svg { width: 28px; height: 28px; flex-shrink: 0; }
+    .nav-logo-name {
+      font-family: 'Instrument Serif', serif;
       font-size: 1.1rem;
-      background: linear-gradient(90deg, #00E5FF, #0066FF);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      letter-spacing: 0.01em;
+      color: var(--ink);
     }
-    .nav-links { display: flex; gap: 36px; list-style: none; }
-    .nav-links a {
+    nav ul { display: flex; gap: 32px; list-style: none; }
+    nav ul a {
       text-decoration: none;
-      color: var(--muted);
-      font-size: 0.88rem;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
+      color: var(--mid);
+      font-size: 0.85rem;
       font-weight: 500;
-      transition: color 0.2s;
+      letter-spacing: 0.01em;
+      transition: color 0.15s;
     }
-    .nav-links a:hover { color: var(--cyan); }
-
-    /* ── SECTIONS ── */
-    section { position: relative; z-index: 1; }
+    nav ul a:hover,
+    nav ul a:focus-visible { color: var(--ink); outline: none; }
+    .nav-cta {
+      background: var(--ink);
+      color: var(--white) !important;
+      padding: 8px 20px;
+      border-radius: 2px;
+      transition: background 0.15s !important;
+    }
+    .nav-cta:hover { background: var(--accent) !important; color: var(--white) !important; }
 
     /* ── HERO ── */
     .hero {
       min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-top: 64px;
+    }
+    .hero-left {
+      padding: 80px 48px 80px 48px;
       display: flex; flex-direction: column; justify-content: center;
-      padding: 140px 60px 80px;
-      overflow: hidden;
+      border-right: 1px solid var(--rule);
     }
-    /* Grid lines background */
-    .hero::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-image:
-        linear-gradient(rgba(0,229,255,0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0,229,255,0.04) 1px, transparent 1px);
-      background-size: 60px 60px;
-      z-index: 0;
-      pointer-events: none;
+    .hero-right {
+      padding: 80px 48px;
+      display: flex; flex-direction: column; justify-content: flex-end;
     }
-    /* Radial glow blob */
-    .hero-glow {
-      position: absolute;
-      top: -80px; right: -100px;
-      width: 700px; height: 700px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(0,102,255,0.14) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    .hero-inner {
-      position: relative; z-index: 2;
-      display: flex; flex-direction: column; justify-content: center;
-      max-width: 800px;
-    }
-
-    .hero-text { flex: 1; }
-    .hero-eyebrow {
-      font-size: 0.78rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--cyan);
-      margin-bottom: 16px;
-      font-weight: 500;
-    }
-    .hero-name {
-      font-family: 'Syne', sans-serif;
-      font-size: clamp(2.8rem, 5vw, 4.5rem);
-      font-weight: 800;
-      line-height: 1.0;
-      margin-bottom: 12px;
-      /* ─────────────────────────────────────────────
-         YOUR NAME — change "Jeff Kariuki" below
-         ───────────────────────────────────────────── */
-    }
-    .hero-name span {
-      background: linear-gradient(90deg, #00E5FF 0%, #0066FF 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    .hero-title {
-      font-family: 'Syne', sans-serif;
-      font-size: 1.1rem;
+    .hero-kicker {
+      font-size: 0.75rem;
       font-weight: 600;
-      color: var(--muted);
-      margin-bottom: 24px;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 28px;
     }
-    .hero-desc {
-      max-width: 520px;
-      color: #8AABB8;
-      font-size: 1rem;
+    .hero-heading {
+      font-family: 'Instrument Serif', serif;
+      font-size: clamp(3rem, 5.5vw, 5.5rem);
+      font-weight: 400;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      color: var(--ink);
       margin-bottom: 40px;
     }
-    .btn-group { display: flex; gap: 16px; flex-wrap: wrap; }
+    .hero-heading em {
+      font-style: italic;
+      color: var(--accent);
+    }
+    .hero-actions { display: flex; gap: 12px; align-items: center; }
     .btn-primary {
-      padding: 13px 32px;
-      background: linear-gradient(135deg, #00E5FF, #0066FF);
-      color: #020C1B;
-      font-family: 'Syne', sans-serif;
-      font-weight: 700;
-      font-size: 0.88rem;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      border: none; cursor: pointer;
-      text-decoration: none;
-      clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
-      transition: opacity 0.2s, transform 0.2s;
-    }
-    .btn-primary:hover { opacity: 0.88; transform: translateY(-2px); }
-    .btn-ghost {
-      padding: 13px 32px;
-      background: transparent;
-      color: var(--cyan);
-      font-family: 'Syne', sans-serif;
+      display: inline-block;
+      padding: 12px 28px;
+      background: var(--ink);
+      color: var(--white);
+      font-size: 0.85rem;
       font-weight: 600;
-      font-size: 0.88rem;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      border-radius: 2px;
+      border: 1px solid var(--ink);
+      transition: background 0.15s, color 0.15s;
+    }
+    .btn-primary:hover,
+    .btn-primary:focus-visible {
+      background: var(--accent);
+      border-color: var(--accent);
+      outline: none;
+    }
+    .btn-ghost {
+      display: inline-block;
+      padding: 12px 28px;
+      background: transparent;
+      color: var(--ink);
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      border-radius: 2px;
+      border: 1px solid var(--rule);
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .btn-ghost:hover,
+    .btn-ghost:focus-visible { border-color: var(--ink); outline: none; }
+
+    /* right side of hero */
+    .hero-desc {
+      font-size: 1.05rem;
+      color: var(--mid);
+      line-height: 1.75;
+      max-width: 420px;
+      margin-bottom: 48px;
+    }
+    .hero-stats {
+      display: flex; gap: 40px;
+      padding-top: 32px;
+      border-top: 1px solid var(--rule);
+    }
+    .stat-num {
+      font-family: 'Instrument Serif', serif;
+      font-size: 2rem;
+      color: var(--ink);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .stat-label {
+      font-size: 0.75rem;
+      font-weight: 500;
       letter-spacing: 0.06em;
       text-transform: uppercase;
-      border: 1px solid rgba(0,229,255,0.35);
-      cursor: pointer;
-      text-decoration: none;
-      clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
-      transition: background 0.2s, color 0.2s;
+      color: var(--mid);
     }
-    .btn-ghost:hover { background: rgba(0,229,255,0.08); }
 
-    /* ── SECTION WRAPPER ── */
-    .section-wrap {
-      padding: 100px 60px;
+    /* ── SECTION COMMON ── */
+    .section-inner {
       max-width: 1200px;
       margin: 0 auto;
+      padding: 96px 48px;
+    }
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 24px;
+      margin-bottom: 56px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--rule);
     }
     .section-label {
       font-size: 0.72rem;
-      letter-spacing: 0.22em;
+      font-weight: 600;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: var(--cyan);
-      margin-bottom: 10px;
+      color: var(--mid);
+      white-space: nowrap;
     }
-    .section-title {
-      font-family: 'Syne', sans-serif;
-      font-size: clamp(1.8rem, 3vw, 2.6rem);
-      font-weight: 800;
-      margin-bottom: 48px;
-      line-height: 1.1;
-    }
-    .section-title span {
-      color: var(--muted);
+    .section-heading {
+      font-family: 'Instrument Serif', serif;
+      font-size: clamp(1.6rem, 2.5vw, 2.2rem);
       font-weight: 400;
-    }
-
-    /* ── DIVIDER ── */
-    .divider {
-      height: 1px;
-      background: linear-gradient(90deg, transparent, var(--border), transparent);
-      margin: 0 60px;
-    }
-
-    /* ── STATS BAR ── */
-    .stats-bar {
-      background: var(--bg2);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-    }
-    .stats-inner {
-      max-width: 1200px; margin: 0 auto;
-      display: flex; align-items: center; justify-content: space-around;
-      padding: 40px 60px;
-      gap: 40px;
-    }
-    .stat { text-align: center; }
-    .stat-num {
-      font-family: 'Syne', sans-serif;
-      font-size: 2.4rem;
-      font-weight: 800;
-      background: linear-gradient(90deg, #00E5FF, #0066FF);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    .stat-label {
-      font-size: 0.78rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-top: 4px;
-    }
-    .stat-divider {
-      width: 1px; height: 60px;
-      background: var(--border);
+      color: var(--ink);
+      line-height: 1.15;
     }
 
     /* ── ABOUT ── */
+    .about-section { background: var(--white); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
     .about-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: center;
+      grid-template-columns: 5fr 4fr;
+      gap: 80px;
+      align-items: start;
     }
-    .about-body { color: #8AABB8; font-size: 1rem; line-height: 1.9; }
-    .about-body p + p { margin-top: 16px; }
-    .skills-list {
-      display: flex; flex-wrap: wrap; gap: 10px;
-      margin-top: 28px;
-    }
-    .skill-tag {
-      padding: 6px 16px;
-      border: 1px solid var(--border);
-      font-size: 0.78rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--cyan);
-      background: rgba(0,229,255,0.04);
-    }
-    .about-card {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      padding: 40px;
-      position: relative;
-      overflow: hidden;
-    }
-    .about-card::before {
-      content: '';
-      position: absolute; top: 0; left: 0;
-      width: 100%; height: 3px;
-      background: linear-gradient(90deg, #00E5FF, #0066FF);
-    }
-    .about-card-title {
-      font-family: 'Syne', sans-serif;
+    .about-body {
+      color: var(--mid);
       font-size: 1rem;
-      font-weight: 700;
-      margin-bottom: 20px;
-      color: var(--text);
+      line-height: 1.85;
     }
+    .about-body p + p { margin-top: 18px; }
+    .about-body strong { color: var(--ink); font-weight: 600; }
 
-    /* ── FOUNDER CARD ── */
-    .founder-card {
-      display: flex; align-items: center; gap: 18px;
-      margin-top: 32px;
-      padding: 20px 24px;
-      background: var(--bg3);
-      border: 1px solid var(--border);
-      border-left: 3px solid var(--cyan);
+    .tags {
+      display: flex; flex-wrap: wrap; gap: 8px;
+      margin-top: 28px; list-style: none;
     }
-    .founder-avatar {
-      width: 64px; height: 64px; flex-shrink: 0;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #00E5FF, #0066FF);
-      padding: 2px;
-      display: flex; align-items: center; justify-content: center;
-    }
-    .founder-avatar-inner {
-      width: 100%; height: 100%;
-      border-radius: 50%;
-      overflow: hidden;
-      background: var(--bg3);
-      display: flex; align-items: center; justify-content: center;
-    }
-    .founder-avatar-inner img {
-      width: 100%; height: 100%; object-fit: cover; border-radius: 50%;
-    }
-    .founder-avatar-inner .founder-placeholder {
-      color: var(--muted); opacity: 0.4;
-    }
-    .founder-avatar-inner .founder-placeholder svg { width: 28px; height: 28px; }
-    .founder-info { display: flex; flex-direction: column; gap: 2px; }
-    .founder-name {
-      font-family: 'Syne', sans-serif;
-      font-size: 1rem; font-weight: 700; color: var(--text);
-    }
-    .founder-title-tag {
-      font-size: 0.75rem; letter-spacing: 0.1em;
-      text-transform: uppercase; color: var(--cyan);
-    }
-    .service-item {
-      display: flex; align-items: flex-start; gap: 14px;
-      padding: 14px 0;
-      border-bottom: 1px solid var(--border);
-    }
-    .service-item:last-child { border-bottom: none; }
-    .service-dot {
-      width: 8px; height: 8px; border-radius: 50%;
-      background: var(--cyan);
-      flex-shrink: 0; margin-top: 8px;
-      box-shadow: 0 0 8px rgba(0,229,255,0.6);
-    }
-    .service-text { font-size: 0.92rem; color: #8AABB8; }
-    .service-text strong { color: var(--text); display: block; font-size: 0.95rem; }
-
-    /* ── PORTFOLIO ── */
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 24px;
-    }
-    .project-card {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      padding: 32px;
-      position: relative;
-      overflow: hidden;
-      transition: border-color 0.3s, transform 0.3s;
-      cursor: default;
-    }
-    .project-card::after {
-      content: '';
-      position: absolute; top: 0; right: 0;
-      width: 80px; height: 80px;
-      background: radial-gradient(circle, rgba(0,229,255,0.08) 0%, transparent 70%);
-      transition: opacity 0.3s;
-    }
-    .project-card:hover {
-      border-color: rgba(0,229,255,0.4);
-      transform: translateY(-4px);
-      box-shadow: var(--glow);
-    }
-    .project-num {
-      font-family: 'Syne', sans-serif;
-      font-size: 0.68rem;
-      letter-spacing: 0.15em;
-      color: var(--cyan);
-      margin-bottom: 16px;
-      opacity: 0.6;
-    }
-    .project-name {
-      font-family: 'Syne', sans-serif;
-      font-size: 1.15rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-    .project-client {
-      font-size: 0.82rem;
-      color: var(--muted);
-      margin-bottom: 16px;
+    .tag {
+      padding: 5px 14px;
+      background: var(--bg);
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      font-size: 0.75rem;
+      font-weight: 500;
       letter-spacing: 0.04em;
+      color: var(--ink);
     }
-    .project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
-    .project-tag {
-      font-size: 0.7rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 4px 10px;
-      border: 1px solid var(--border);
-      color: var(--muted);
-    }
-    .project-link {
-      display: inline-flex; align-items: center; gap: 6px;
-      font-size: 0.8rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--cyan);
-      text-decoration: none;
+
+    .about-right {}
+    .services-title {
+      font-size: 0.72rem;
       font-weight: 600;
-      transition: gap 0.2s;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 20px;
     }
-    .project-link:hover { gap: 10px; }
-    .project-link svg { width: 14px; height: 14px; }
+    .service-row {
+      display: flex; align-items: flex-start; gap: 16px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .service-row:first-of-type { border-top: 1px solid var(--rule); }
+    .service-name {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--ink);
+      min-width: 0;
+      flex: 1;
+    }
+    .service-desc {
+      font-size: 0.85rem;
+      color: var(--mid);
+      line-height: 1.5;
+    }
+
+    /* ── TEAM ── */
+    .team-grid {
+      display: flex; gap: 16px;
+      margin-top: 36px;
+    }
+    .team-card {
+      flex: 1;
+      display: flex; align-items: center; gap: 14px;
+      padding: 16px 20px;
+      background: var(--bg);
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+    }
+    .team-avatar {
+      width: 52px; height: 52px; flex-shrink: 0;
+      border-radius: 50%;
+      overflow: hidden;
+      background: var(--surface);
+      border: 2px solid var(--rule);
+    }
+    .team-avatar img {
+      width: 100%; height: 100%;
+      object-fit: cover; display: block;
+    }
+    .team-name {
+      font-weight: 600; font-size: 0.9rem; color: var(--ink);
+    }
+    .team-role {
+      font-size: 0.75rem; color: var(--mid);
+      letter-spacing: 0.04em; margin-top: 2px;
+    }
+
+    /* ── PORTFOLIO — editorial list ── */
+    .work-section { background: var(--bg); }
+    .work-table { width: 100%; border-collapse: collapse; }
+    .work-table thead th {
+      text-align: left;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--mid);
+      padding: 0 0 14px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .work-table thead th:last-child { text-align: right; }
+    .work-table tbody tr {
+      border-bottom: 1px solid var(--rule);
+      transition: background 0.12s;
+    }
+    .work-table tbody tr:hover { background: var(--surface); }
+    .work-table td {
+      padding: 20px 0;
+      vertical-align: middle;
+    }
+    .work-table td:not(:first-child) { padding-left: 24px; }
+    .work-idx {
+      font-size: 0.75rem;
+      color: var(--mid);
+      font-variant-numeric: tabular-nums;
+      width: 32px;
+    }
+    .work-name {
+      font-family: 'Instrument Serif', serif;
+      font-size: 1.1rem;
+      color: var(--ink);
+    }
+    .work-client {
+      font-size: 0.82rem;
+      color: var(--mid);
+    }
+    .work-type {
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding: 4px 10px;
+      background: var(--bg);
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      color: var(--mid);
+      white-space: nowrap;
+      display: inline-block;
+    }
+    .work-link-cell { text-align: right; }
+    .work-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 0.8rem; font-weight: 600;
+      color: var(--accent);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+    .work-link:hover,
+    .work-link:focus-visible { text-decoration: underline; outline: none; }
+    .work-link svg { width: 13px; height: 13px; }
 
     /* ── CONTACT ── */
-    .contact-section {
-      background: var(--bg2);
-      border-top: 1px solid var(--border);
+    .contact-section { background: var(--ink); border-top: 1px solid #222; }
+    .contact-section .section-inner { padding: 96px 48px; }
+    .contact-section .section-header { border-bottom-color: #2A2A28; }
+    .contact-section .section-label { color: #666; }
+    .contact-section .section-heading { color: var(--white); }
+    .contact-intro {
+      font-size: 1.05rem;
+      color: #888;
+      line-height: 1.75;
+      max-width: 440px;
+      margin-bottom: 48px;
     }
-    .contact-inner {
-      max-width: 700px; margin: 0 auto;
-      padding: 100px 60px;
-      text-align: center;
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      max-width: 640px;
     }
-    .contact-inner .section-title { margin-bottom: 20px; }
-    .contact-desc { color: var(--muted); margin-bottom: 40px; font-size: 1rem; }
-    .contact-channels {
-      display: flex; flex-direction: column; gap: 16px;
-      max-width: 480px; margin: 0 auto;
-    }
-    .contact-channel {
-      display: flex; align-items: center; gap: 20px;
-      padding: 20px 28px;
-      background: var(--bg3);
-      border: 1px solid var(--border);
+    .contact-item {
+      display: flex; align-items: center; gap: 14px;
+      padding: 18px 22px;
+      background: #1A1A18;
+      border: 1px solid #2A2A28;
+      border-radius: 2px;
       text-decoration: none;
-      color: var(--text);
-      transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+      color: var(--white);
+      transition: border-color 0.15s, background 0.15s;
     }
-    .contact-channel:hover {
-      border-color: rgba(0,229,255,0.45);
-      transform: translateX(6px);
-      box-shadow: var(--glow);
+    .contact-item:hover,
+    .contact-item:focus-visible {
+      border-color: #444;
+      background: #222220;
+      outline: none;
     }
-    .channel-icon {
-      width: 44px; height: 44px; flex-shrink: 0;
+    .contact-icon {
+      width: 36px; height: 36px; flex-shrink: 0;
       display: flex; align-items: center; justify-content: center;
-      border: 1px solid var(--border);
-      color: var(--cyan);
+      border: 1px solid #2A2A28;
+      border-radius: 2px;
+      color: #888;
     }
-    .channel-icon svg { width: 20px; height: 20px; }
-    .channel-info { display: flex; flex-direction: column; gap: 2px; text-align: left; }
-    .channel-label {
-      font-size: 0.7rem; letter-spacing: 0.14em;
-      text-transform: uppercase; color: var(--muted); font-weight: 500;
+    .contact-icon svg { width: 16px; height: 16px; }
+    .contact-lbl {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #666;
+      display: block;
     }
-    .channel-value {
-      font-family: 'Syne', sans-serif;
-      font-size: 0.95rem; font-weight: 600; color: var(--text);
+    .contact-val {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: #CCC;
+      display: block;
+      margin-top: 2px;
     }
 
     /* ── FOOTER ── */
     footer {
-      background: var(--bg);
-      border-top: 1px solid var(--border);
-      padding: 30px 60px;
+      background: #0A0A09;
+      border-top: 1px solid #1A1A18;
+      padding: 24px 48px;
       display: flex; align-items: center; justify-content: space-between;
-      position: relative; z-index: 1;
     }
-    .footer-logo {
-      display: flex; align-items: center; gap: 10px;
-      font-family: 'Syne', sans-serif;
-      font-size: 0.9rem;
-      font-weight: 700;
-      color: var(--muted);
+    .footer-brand {
+      display: flex; align-items: center; gap: 8px;
+      font-family: 'Instrument Serif', serif;
+      font-size: 0.9rem; color: #444;
     }
-    .footer-logo img { width: 24px; height: 24px; }
-    .footer-copy { font-size: 0.78rem; color: var(--muted); }
-
-    /* ── ANIMATIONS ── */
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(28px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-    .hero-inner { animation: fadeUp 0.8s ease both; }
-    .hero-eyebrow { animation: fadeUp 0.7s 0.1s ease both; }
-    .hero-name    { animation: fadeUp 0.7s 0.2s ease both; }
-    .hero-title   { animation: fadeUp 0.7s 0.3s ease both; }
-    .hero-desc    { animation: fadeUp 0.7s 0.4s ease both; }
-    .btn-group    { animation: fadeUp 0.7s 0.5s ease both; }
+    .footer-brand svg { width: 20px; height: 20px; }
+    footer small { font-size: 0.75rem; color: #444; }
 
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
-      nav { padding: 16px 24px; }
-      .nav-links { display: none; }
-      .hero { padding: 120px 24px 60px; }
-      .hero-inner { flex-direction: column; gap: 40px; align-items: flex-start; }
-      .section-wrap { padding: 70px 24px; }
-      .divider { margin: 0 24px; }
-      .stats-inner { flex-wrap: wrap; padding: 30px 24px; }
-      .stat-divider { display: none; }
-      .about-grid { grid-template-columns: 1fr; }
-      .contact-inner { padding: 70px 24px; }
-      footer { padding: 24px; flex-direction: column; gap: 12px; text-align: center; }
+      nav { padding: 0 24px; }
+      nav ul { display: none; }
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-left { padding: 60px 24px 40px; border-right: none; border-bottom: 1px solid var(--rule); }
+      .hero-right { padding: 40px 24px 60px; }
+      .section-inner { padding: 64px 24px; }
+      .about-grid { grid-template-columns: 1fr; gap: 48px; }
+      .team-grid { flex-direction: column; }
+      .work-table thead { display: none; }
+      .work-table tbody tr { display: flex; flex-direction: column; padding: 16px 0; gap: 4px; }
+      .work-table td { padding: 2px 0 !important; }
+      .work-link-cell { text-align: left; }
+      .contact-grid { grid-template-columns: 1fr; }
+      footer { padding: 20px 24px; flex-direction: column; gap: 8px; text-align: center; }
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(16px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+      .hero-kicker  { animation: fadeIn 0.5s 0.05s ease both; }
+      .hero-heading { animation: fadeIn 0.5s 0.15s ease both; }
+      .hero-actions { animation: fadeIn 0.5s 0.25s ease both; }
+      .hero-desc    { animation: fadeIn 0.5s 0.15s ease both; }
+      .hero-stats   { animation: fadeIn 0.5s 0.3s  ease both; }
+    }
+
+    @media print {
+      nav, footer { display: none; }
+      body { background: white; color: black; }
     }
   </style>
 </head>
 <body>
 
-<!-- ═══════════════════════════════════════
-     NAVIGATION
-═══════════════════════════════════════ -->
-<nav>
-  <a href="#hero" class="nav-logo">
-    <!--
-      LOGO IN NAV — the logo SVG is embedded inline below.
-      If you downloaded the separate logo file, you can also do:
-      <img src="nexus-softwares-logo.svg" alt="Nexus Softwares Logo">
-    -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="36" height="36">
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- NAV -->
+<nav role="navigation" aria-label="Main navigation">
+  <a href="#hero" class="nav-logo" aria-label="Nexus Softwares — home">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
       <defs>
-        <linearGradient id="hg" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style="stop-color:#00E5FF"/>
-          <stop offset="100%" style="stop-color:#0066FF"/>
-        </linearGradient>
-        <linearGradient id="ig" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style="stop-color:#001830"/>
-          <stop offset="100%" style="stop-color:#002850"/>
+        <linearGradient id="ng" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#1B3A6B"/>
+          <stop offset="100%" stop-color="#2B5FA8"/>
         </linearGradient>
       </defs>
-      <rect width="400" height="400" fill="#020C1B" rx="24"/>
-      <polygon points="200,40 340,120 340,280 200,360 60,280 60,120" fill="url(#hg)"/>
-      <polygon points="200,58 325,130 325,270 200,342 75,270 75,130" fill="url(#ig)"/>
-      <rect x="122" y="138" width="28" height="120" rx="3" fill="url(#hg)"/>
-      <rect x="250" y="138" width="28" height="120" rx="3" fill="url(#hg)"/>
-      <polygon points="122,138 154,138 278,258 250,258 126,138" fill="url(#hg)"/>
-      <circle cx="200" cy="320" r="6" fill="#00E5FF"/>
+      <rect width="400" height="400" fill="#111110" rx="20"/>
+      <polygon points="200,40 340,120 340,280 200,360 60,280 60,120" fill="url(#ng)"/>
+      <polygon points="200,62 318,132 318,268 200,338 82,268 82,132" fill="#111110"/>
+      <rect x="126" y="142" width="26" height="112" rx="2" fill="url(#ng)"/>
+      <rect x="248" y="142" width="26" height="112" rx="2" fill="url(#ng)"/>
+      <polygon points="126,142 152,142 274,254 248,254 128,142" fill="url(#ng)"/>
     </svg>
-    <span>Nexus Softwares</span>
+    <span class="nav-logo-name">Nexus Softwares</span>
   </a>
-  <ul class="nav-links">
+  <ul>
     <li><a href="#about">About</a></li>
     <li><a href="#work">Work</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact" class="nav-cta">Get in touch</a></li>
   </ul>
 </nav>
 
-<!-- ═══════════════════════════════════════
-     HERO
-═══════════════════════════════════════ -->
-<section class="hero" id="hero">
-  <div class="hero-glow"></div>
-  <div class="hero-inner">
-    <div class="hero-text">
-      <p class="hero-eyebrow">Nairobi, Kenya </p>
-      <h1 class="hero-name">Nexus<br><span>Softwares</span></h1>
-      <p class="hero-title">Web Development Company</p>
-      <p class="hero-desc">
-        We build fast, beautiful, and functional websites for businesses and individuals across Kenya and beyond. Clean code. Real results.
-      </p>
-      <div class="btn-group">
-        <a href="#contact" class="btn-primary">Get In Touch</a>
+<main id="main-content">
+
+<!-- HERO -->
+<section class="hero" id="hero" aria-labelledby="hero-heading">
+  <div class="hero-left">
+    <p class="hero-kicker">Web Development · Ruiru, Kenya</p>
+    <h1 class="hero-heading" id="hero-heading">
+      We build websites<br>that work <em>for</em><br>your business.
+    </h1>
+    <div class="hero-actions">
+      <a href="#work" class="btn-primary">See our work</a>
+      <a href="#contact" class="btn-ghost">Get in touch</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <p class="hero-desc">
+      Nexus Softwares is a web development company based in Ruiru, Kenya. We design and build fast, professional websites for businesses across Kenya — from landing pages to full web applications. Clean code, honest pricing, on-time delivery.
+    </p>
+    <div class="hero-stats" role="list" aria-label="Key figures">
+      <div role="listitem">
+        <div class="stat-num">9+</div>
+        <div class="stat-label">Sites launched</div>
+      </div>
+      <div role="listitem">
+        <div class="stat-num">2+</div>
+        <div class="stat-label">Years active</div>
+      </div>
+      <div role="listitem">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Client satisfaction</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════
-     STATS BAR
-═══════════════════════════════════════ -->
-<div class="stats-bar">
-  <div class="stats-inner">
-    <div class="stat">
-      <div class="stat-num">100%</div>
-      <div class="stat-label">Client Satisfaction</div>
+<!-- ABOUT -->
+<section id="about" class="about-section" aria-labelledby="about-heading">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-label">About</span>
+      <h2 class="section-heading" id="about-heading">A small team. A high standard.</h2>
     </div>
-    <div class="stat-divider"></div>
-    <div class="stat">
-      <div class="stat-num">2+</div>
-      <div class="stat-label">Years Experience</div>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat">
-      <div class="stat-num">KE &amp; Global</div>
-      <div class="stat-label">Clients Served</div>
-    </div>
-  </div>
-</div>
-
-<!-- ═══════════════════════════════════════
-     ABOUT
-═══════════════════════════════════════ -->
-<section id="about">
-  <div class="section-wrap">
-    <p class="section-label">About</p>
-    <h2 class="section-title">Who We Are &amp; <span>What We Do</span></h2>
     <div class="about-grid">
       <div>
         <div class="about-body">
           <p>
-            <strong>Nexus Softwares</strong> is a web development company based in Ruiru, Kenya. We create professional, high-performance websites that help businesses grow their online presence and connect with their customers.
+            <strong>Nexus Softwares</strong> was founded to give Kenyan businesses access to the same quality of web presence that larger companies take for granted. We work directly with clients — no middle layers — which means faster communication, faster delivery, and work we can put our names on.
           </p>
           <p>
-            From local Kenyan SMEs to international clients, we deliver tailored digital solutions, landing pages, business websites, portfolios, and custom web apps, all built to a high standard and delivered on time.
+            We build in HTML, CSS, JavaScript, and Python/Flask. Every site we ship is mobile-first, fast-loading, and built without unnecessary bloat. If you need it maintained after launch, we do that too.
           </p>
         </div>
-        <div class="skills-list">
-          <span class="skill-tag">HTML &amp; CSS</span>
-          <span class="skill-tag">JavaScript</span>
-          <span class="skill-tag">Python / Flask</span>
-          <span class="skill-tag">Responsive Design</span>
-          <span class="skill-tag">UI / UX</span>
-          <span class="skill-tag">Web Apps</span>
-        </div>
-
-        <!-- FOUNDER CARD -->
-        <div class="founder-card">
-          <div class="founder-avatar">
-            <div class="founder-avatar-inner">
-              <!--
-                YOUR PHOTO — HOW TO ADD IT:
-                1. Put your photo file (e.g. jeff.jpg) in the same folder as this HTML
-                2. Uncomment the <img> line below and set src="jeff.jpg"
-                3. Delete the founder-placeholder div
-              -->
-              <img src="jeff.jpeg" alt="Jeff Wamakima"> 
-              
+        <ul class="tags" aria-label="Technologies">
+          <li class="tag">HTML &amp; CSS</li>
+          <li class="tag">JavaScript</li>
+          <li class="tag">Python / Flask</li>
+          <li class="tag">Responsive Design</li>
+          <li class="tag">UI / UX</li>
+          <li class="tag">Web Apps</li>
+        </ul>
+        <div class="team-grid" role="list" aria-label="Our team">
+          <div class="team-card" role="listitem">
+            <div class="team-avatar">
+              <img src="jeff.jpeg" alt="Jeff Wamakima" width="52" height="52" loading="lazy">
+            </div>
+            <div>
+              <div class="team-name">Jeff Wamakima</div>
+              <div class="team-role">Founder</div>
             </div>
           </div>
-          <div class="founder-info">
-            <span class="founder-name">Jeff Wamakima</span>
-            <span class="founder-title-tag">Founder</span>
-          </div>
-        </div>
-        <div class="founder-card">
-          <div class="founder-avatar">
-            <div class="founder-avatar-inner">
-              <!--
-                YOUR PHOTO — HOW TO ADD IT:
-                1. Put your photo file (e.g. jeff.jpg) in the same folder as this HTML
-                2. Uncomment the <img> line below and set src="jeff.jpg"
-                3. Delete the founder-placeholder div
-              -->
-              <img src="elisha.jpeg" alt="Elisha Wera"> 
-              
+          <div class="team-card" role="listitem">
+            <div class="team-avatar">
+              <img src="elisha.jpeg" alt="Elisha Wera" width="52" height="52" loading="lazy">
             </div>
-          </div>
-          <div class="founder-info">
-            <span class="founder-name">Elisha Wera</span>
-            <span class="founder-title-tag">Director</span>
+            <div>
+              <div class="team-name">Elisha Wera</div>
+              <div class="team-role">Director</div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="about-card">
-        <p class="about-card-title">What We Offer</p>
-        <div class="service-item">
-          <span class="service-dot"></span>
-          <div class="service-text">
-            <strong>Business Websites</strong>
-            Professional sites for businesses that want to stand out online.
-          </div>
-        </div>
-        <div class="service-item">
-          <span class="service-dot"></span>
-          <div class="service-text">
-            <strong>Landing Pages</strong>
-            High-converting pages for products, services, and campaigns.
-          </div>
-        </div>
-        <div class="service-item">
-          <span class="service-dot"></span>
-          <div class="service-text">
-            <strong>Portfolio Sites</strong>
-            Personal branding websites for creatives and professionals.
-          </div>
-        </div>
-        <div class="service-item">
-          <span class="service-dot"></span>
-          <div class="service-text">
-            <strong>Custom Web Apps</strong>
-            Functional web applications built with Python, Flask, and more.
-          </div>
-        </div>
 
-         <div class="service-item">
-          <span class="service-dot"></span>
-          <div class="service-text">
-            <strong>Social Media Management</strong>
-            Comprehensive social media strategy and execution.
+      <div class="about-right" role="region" aria-label="Services">
+        <p class="services-title">What we offer</p>
+        <div class="service-row">
+          <div>
+            <div class="service-name">Business Websites</div>
+            <div class="service-desc">Professional sites that represent your brand online.</div>
           </div>
         </div>
-
-         <div class="service-item">
-          <span class="service-dot"></span>
-          <div class="service-text">
-            <strong>Website management</strong>
-            Ongoing maintenance and updates for existing websites.
+        <div class="service-row">
+          <div>
+            <div class="service-name">Landing Pages</div>
+            <div class="service-desc">Focused pages built to convert visitors into customers.</div>
           </div>
         </div>
-
-
+        <div class="service-row">
+          <div>
+            <div class="service-name">Portfolio Sites</div>
+            <div class="service-desc">Personal branding websites for creatives and professionals.</div>
+          </div>
+        </div>
+        <div class="service-row">
+          <div>
+            <div class="service-name">Custom Web Apps</div>
+            <div class="service-desc">Functional applications built with Python, Flask, and more.</div>
+          </div>
+        </div>
+        <div class="service-row">
+          <div>
+            <div class="service-name">Social Media Management</div>
+            <div class="service-desc">Strategy and execution across your social channels.</div>
+          </div>
+        </div>
+        <div class="service-row">
+          <div>
+            <div class="service-name">Website Maintenance</div>
+            <div class="service-desc">Ongoing updates and support after your site goes live.</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="divider"></div>
-
-<!-- ═══════════════════════════════════════
-     PORTFOLIO / WORK
-     ══════════════════════════════════════
-     HOW TO ADD A NEW PROJECT:
-     Copy one <div class="project-card"> block below and paste it
-     inside .portfolio-grid. Then fill in:
-       - project-num  : e.g. 04
-       - project-name : the website/project name
-       - project-client: the client or person's name
-       - project-tag   : the type of work (Landing Page, Business Site, etc.)
-       - href on project-link: the live URL of the website
-     That's it!
-═══════════════════════════════════════ -->
-<!-- ═══════════════════════════════════════
-     PORTFOLIO
-═══════════════════════════════════════ -->
-<div class="divider"></div>
-<section id="work">
-  <div class="section-wrap">
-    <p class="section-label">Portfolio</p>
-    <h2 class="section-title">Work We've <span>Delivered</span></h2>
-    <div class="portfolio-grid">
-
-      <div class="project-card">
-        <div class="project-num">01</div>
-        <div class="project-name">Jazo Phone Accessories</div>
-        <div class="project-client">Phone Accessories</div>
-        <div class="project-tags">
-          <span class="project-tag">E-commerce</span>
-          <span class="project-tag">Responsive</span>
-        </div>
-        <a href="https://www.jazophoneaccessories.co.ke/" target="_blank" class="project-link">
-          View Live
-          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-      
-      <div class="project-card">
-        <div class="project-num">02</div>
-        <div class="project-name">Barber Queen</div>
-        <div class="project-client">Barbershop — Nairobi</div>
-        <div class="project-tags">
-          <span class="project-tag">Landing Page</span>
-          <span class="project-tag">Responsive</span>
-        </div>
-        <a href="https://barber-queen.vercel.app/" target="_blank" class="project-link">
-          View Live
-          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-
-      <div class="project-card">
-        <div class="project-num">03</div>
-        <div class="project-name">Blink Sparkle Cleaners</div>
-        <div class="project-client">Cleaning Services — Kenya</div>
-        <div class="project-tags">
-          <span class="project-tag">Business Website</span>
-          <span class="project-tag">Responsive</span>
-        </div>
-        <a href="https://blink-sparkle-cleaners.vercel.app/" target="_blank" class="project-link">
-          View Live
-          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-
-      <div class="project-card">
-        <div class="project-num">04</div>
-        <div class="project-name">Crystal Cleaners</div>
-        <div class="project-client">Cleaning Services — Kenya</div>
-        <div class="project-tags">
-          <span class="project-tag">Business Website</span>
-          <span class="project-tag">WhatsApp Booking</span>
-        </div>
-        <a href="https://crystal-cleaners-ten.vercel.app/" target="_blank" class="project-link">
-          View Live
-          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-
-      <div class="project-card">
-        <div class="project-num">05</div>
-        <div class="project-name">Kliniti Cleaners</div>
-        <div class="project-client">Cleaning and Fumigation — Kenya</div>
-        <div class="project-tags">
-          <span class="project-tag">Business Website</span>
-          <span class="project-tag">Responsive</span>
-        </div>
-        <a href="https://kliniti-cleaners.vercel.app/" target="_blank" class="project-link">
-          View Live
-          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-
-      <div class="project-card">
-        <div class="project-num">06</div>
-        <div class="project-name">Sparkle Sisters</div>
-        <div class="project-client">Cleaning and Errands — Nairobi</div>
-        <div class="project-tags">
-          <span class="project-tag">Business Website</span>
-          <span class="project-tag">Responsive</span>
-        </div>
-        <a href="https://sparkle-sisters-co.vercel.app/" target="_blank" class="project-link">
-          View Live
-          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-
-      <div class="project-card">
-        <div class="project-num">07</div>
-        <div class="project-name">Jazo Cleaners</div>
-        <div class="project-client">Cleaning Services — Kenya</div>
-        <div class="project-tags">
-          <span class="project-tag">Business Website</span>
-          <span class="project-tag">Responsive</span>
-        </div>
-        <a href="https://www.jazocleaners.co.ke/" target="_blank" class="project-link">
-          View Live
-          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-
-      <div class="project-card">
-        <div class="project-num">08</div>
-        <div class="project-name">Fortune Future Cleaners</div>
-        <div class="project-client">Cleaning Services — Kenya</div>
-        <div class="project-tags">
-          <span class="project-tag">Business Website</span>
-          <span class="project-tag">Responsive</span>
-        </div>
-        <a href="https://fortune-future-cleaners.vercel.app/" target="_blank" class="project-link">
-          View Live
-          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-
-      <div class="project-card">
-        <div class="project-num">09</div>
-        <div class="project-name">SpeedStar Movers</div>
-        <div class="project-client">Moving and Logistics — Kenya</div>
-        <div class="project-tags">
-          <span class="project-tag">Business Website</span>
-          <span class="project-tag">Responsive</span>
-        </div>
-        <a href="https://speedstar-movers.vercel.app/" target="_blank" class="project-link">
-          View Live
-          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-
+<!-- WORK -->
+<section id="work" class="work-section" aria-labelledby="work-heading">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-label">Work</span>
+      <h2 class="section-heading" id="work-heading">Sites we've shipped.</h2>
     </div>
+    <table class="work-table" aria-label="Portfolio of completed projects">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Project</th>
+          <th scope="col">Client</th>
+          <th scope="col">Type</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="work-idx">01</td>
+          <td><span class="work-name">Jazo Phone Accessories</span></td>
+          <td><span class="work-client">Phone Accessories Retailer</span></td>
+          <td><span class="work-type">E-commerce</span></td>
+          <td class="work-link-cell"><a href="https://www.jazophoneaccessories.co.ke/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="View Jazo Phone Accessories (opens in new tab)">View <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></td>
+        </tr>
+        <tr>
+          <td class="work-idx">02</td>
+          <td><span class="work-name">Barber Queen</span></td>
+          <td><span class="work-client">Barbershop, Nairobi</span></td>
+          <td><span class="work-type">Landing Page</span></td>
+          <td class="work-link-cell"><a href="https://barber-queen.vercel.app/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="View Barber Queen (opens in new tab)">View <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></td>
+        </tr>
+        <tr>
+          <td class="work-idx">03</td>
+          <td><span class="work-name">Blink Sparkle Cleaners</span></td>
+          <td><span class="work-client">Cleaning Services, Kenya</span></td>
+          <td><span class="work-type">Business Website</span></td>
+          <td class="work-link-cell"><a href="https://blink-sparkle-cleaners.vercel.app/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="View Blink Sparkle Cleaners (opens in new tab)">View <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></td>
+        </tr>
+        <tr>
+          <td class="work-idx">04</td>
+          <td><span class="work-name">Crystal Cleaners</span></td>
+          <td><span class="work-client">Cleaning Services, Kenya</span></td>
+          <td><span class="work-type">Business Website</span></td>
+          <td class="work-link-cell"><a href="https://crystal-cleaners-ten.vercel.app/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="View Crystal Cleaners (opens in new tab)">View <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></td>
+        </tr>
+        <tr>
+          <td class="work-idx">05</td>
+          <td><span class="work-name">Kliniti Cleaners</span></td>
+          <td><span class="work-client">Cleaning &amp; Fumigation, Kenya</span></td>
+          <td><span class="work-type">Business Website</span></td>
+          <td class="work-link-cell"><a href="https://kliniti-cleaners.vercel.app/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="View Kliniti Cleaners (opens in new tab)">View <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></td>
+        </tr>
+        <tr>
+          <td class="work-idx">06</td>
+          <td><span class="work-name">Sparkle Sisters</span></td>
+          <td><span class="work-client">Cleaning &amp; Errands, Nairobi</span></td>
+          <td><span class="work-type">Business Website</span></td>
+          <td class="work-link-cell"><a href="https://sparkle-sisters-co.vercel.app/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="View Sparkle Sisters (opens in new tab)">View <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></td>
+        </tr>
+        <tr>
+          <td class="work-idx">07</td>
+          <td><span class="work-name">Jazo Cleaners</span></td>
+          <td><span class="work-client">Cleaning Services, Kenya</span></td>
+          <td><span class="work-type">Business Website</span></td>
+          <td class="work-link-cell"><a href="https://www.jazocleaners.co.ke/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="View Jazo Cleaners (opens in new tab)">View <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></td>
+        </tr>
+        <tr>
+          <td class="work-idx">08</td>
+          <td><span class="work-name">Fortune Future Cleaners</span></td>
+          <td><span class="work-client">Cleaning Services, Kenya</span></td>
+          <td><span class="work-type">Business Website</span></td>
+          <td class="work-link-cell"><a href="https://fortune-future-cleaners.vercel.app/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="View Fortune Future Cleaners (opens in new tab)">View <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></td>
+        </tr>
+        <tr>
+          <td class="work-idx">09</td>
+          <td><span class="work-name">SpeedStar Movers</span></td>
+          <td><span class="work-client">Moving &amp; Logistics, Kenya</span></td>
+          <td><span class="work-type">Business Website</span></td>
+          <td class="work-link-cell"><a href="https://speedstar-movers.vercel.app/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="View SpeedStar Movers (opens in new tab)">View <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </section>
-<div class="divider"></div>
 
-<div class="divider"></div>
-
-<!-- ═══════════════════════════════════════
-     CONTACT
-═══════════════════════════════════════ -->
-<section id="contact" class="contact-section">
-  <div class="contact-inner">
-    <p class="section-label">Contact</p>
-    <h2 class="section-title">Let's Build<br><span>Something Great</span></h2>
-    <p class="contact-desc">
-      Have a project in mind? We'd love to hear about it. Reach us through any of the channels below.
+<!-- CONTACT -->
+<section id="contact" class="contact-section" aria-labelledby="contact-heading">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-label">Contact</span>
+      <h2 class="section-heading" id="contact-heading">Let's talk about your project.</h2>
+    </div>
+    <p class="contact-intro">
+      Tell us what you need and we'll get back to you the same day. We work with businesses of all sizes across Kenya.
     </p>
-    <div class="contact-channels">
-      <a href="mailto:jeff.006760@gmail.com" class="contact-channel">
-        <span class="channel-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <rect x="2" y="4" width="20" height="16" rx="2"/>
-            <path d="m2 7 10 7 10-7"/>
-          </svg>
-        </span>
-        <span class="channel-info">
-          <span class="channel-label">Email</span>
-          <span class="channel-value">jeff.006760@gmail.com</span>
-        </span>
-      </a>
-      <a href="https://wa.me/254753223309" target="_blank" class="contact-channel">
-        <span class="channel-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
-          </svg>
-        </span>
-        <span class="channel-info">
-          <span class="channel-label">WhatsApp</span>
-          <span class="channel-value">+254 753 223 309</span>
-        </span>
-      </a>
-      <a href="tel:+254753223309" class="contact-channel">
-        <span class="channel-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 17z"/>
-          </svg>
-        </span>
-        <span class="channel-info">
-          <span class="channel-label">Call Founder</span>
-          <span class="channel-value">+254 753 223 309</span>
-        </span>
-      </a>
-      <a href="tel:+254728566880" class="contact-channel">
-        <span class="channel-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 17z"/>
-          </svg>
-        </span>
-        <span class="channel-info">
-          <span class="channel-label">Call Director</span>
-          <span class="channel-value">+254 728 566 880</span>
-        </span>
-      </a>
-    </div>
+    <address>
+      <div class="contact-grid">
+        <a href="mailto:jeff.006760@gmail.com" class="contact-item">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          </span>
+          <span>
+            <span class="contact-lbl">Email</span>
+            <span class="contact-val">jeff.006760@gmail.com</span>
+          </span>
+        </a>
+        <a href="https://wa.me/254753223309" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </span>
+          <span>
+            <span class="contact-lbl">WhatsApp</span>
+            <span class="contact-val">+254 753 223 309</span>
+          </span>
+        </a>
+        <a href="tel:+254753223309" class="contact-item">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 17z"/></svg>
+          </span>
+          <span>
+            <span class="contact-lbl">Call — Founder</span>
+            <span class="contact-val">+254 753 223 309</span>
+          </span>
+        </a>
+        <a href="tel:+254728566880" class="contact-item">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 17z"/></svg>
+          </span>
+          <span>
+            <span class="contact-lbl">Call — Director</span>
+            <span class="contact-val">+254 728 566 880</span>
+          </span>
+        </a>
+      </div>
+    </address>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════
-     FOOTER
-═══════════════════════════════════════ -->
-<footer>
-  <div class="footer-logo">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24">
-      <defs>
-        <linearGradient id="fg" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style="stop-color:#00E5FF"/>
-          <stop offset="100%" style="stop-color:#0066FF"/>
-        </linearGradient>
-      </defs>
-      <rect width="400" height="400" fill="#020C1B" rx="24"/>
-      <polygon points="200,40 340,120 340,280 200,360 60,280 60,120" fill="url(#fg)"/>
-      <polygon points="200,58 325,130 325,270 200,342 75,270 75,130" fill="#061424"/>
-      <rect x="122" y="138" width="28" height="120" rx="3" fill="url(#fg)"/>
-      <rect x="250" y="138" width="28" height="120" rx="3" fill="url(#fg)"/>
-      <polygon points="122,138 154,138 278,258 250,258 126,138" fill="url(#fg)"/>
+</main>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="footer-brand">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
+      <defs><linearGradient id="fg2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1B3A6B"/><stop offset="100%" stop-color="#2B5FA8"/></linearGradient></defs>
+      <rect width="400" height="400" fill="#111110" rx="20"/>
+      <polygon points="200,40 340,120 340,280 200,360 60,280 60,120" fill="url(#fg2)"/>
+      <polygon points="200,62 318,132 318,268 200,338 82,268 82,132" fill="#111110"/>
+      <rect x="126" y="142" width="26" height="112" rx="2" fill="url(#fg2)"/>
+      <rect x="248" y="142" width="26" height="112" rx="2" fill="url(#fg2)"/>
+      <polygon points="126,142 152,142 274,254 248,254 128,142" fill="url(#fg2)"/>
     </svg>
     Nexus Softwares
   </div>
-  <p class="footer-copy">© 2026 Nexus Softwares. All rights reserved.</p>
+  <small>&copy; 2026 Nexus Softwares. All rights reserved.</small>
 </footer>
 
 </body>
