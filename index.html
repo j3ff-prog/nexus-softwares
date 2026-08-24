@@ -3,21 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <title>Nexus Softwares — Web Development & IT Solutions, Kenya</title>
-  <meta name="description" content="Nexus Softwares builds fast, professional websites and web apps for businesses across Kenya and beyond. Based in Ruiru, Nairobi."/>
+  <title>Nexus Softwares — Zoho Consultancy & Web Development, Kenya</title>
+  <meta name="description" content="Nexus Softwares helps Kenyan businesses implement Zoho Books, eTIMS integration, and automation. Based in Ruiru, Nairobi."/>
   <meta name="robots" content="index, follow"/>
   <link rel="canonical" href="https://nexussoftwares.co.ke/"/>
-
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://nexussoftwares.co.ke/"/>
-  <meta property="og:title" content="Nexus Softwares — Web Development & IT Solutions, Kenya"/>
-  <meta property="og:description" content="Professional websites and web apps for Kenyan businesses. Fast delivery, clean code, real results."/>
+  <meta property="og:title" content="Nexus Softwares — Zoho Consultancy & Web Development, Kenya"/>
+  <meta property="og:description" content="Zoho Books setup, eTIMS integration, and business automation for Kenyan companies."/>
   <meta property="og:image" content="https://nexussoftwares.co.ke/og-image.jpg"/>
   <meta property="og:locale" content="en_KE"/>
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="Nexus Softwares — Web Development, Kenya"/>
-  <meta name="twitter:description" content="Professional websites and web apps for Kenyan businesses."/>
+  <meta name="twitter:title" content="Nexus Softwares — Zoho Consultancy, Kenya"/>
+  <meta name="twitter:description" content="Zoho Books setup, eTIMS integration, and business automation for Kenyan companies."/>
   <meta name="twitter:image" content="https://nexussoftwares.co.ke/og-image.jpg"/>
 
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%23111110' rx='24'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%231B3A6B'/%3E%3Cstop offset='100%25' stop-color='%232B5FA8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='200,40 340,120 340,280 200,360 60,280 60,120' fill='url(%23g)'/%3E%3Cpolygon points='200,62 318,132 318,268 200,338 82,268 82,132' fill='%23111110'/%3E%3Crect x='126' y='142' width='26' height='112' rx='2' fill='url(%23g)'/%3E%3Crect x='248' y='142' width='26' height='112' rx='2' fill='url(%23g)'/%3E%3Cpolygon points='126,142 152,142 274,254 248,254 128,142' fill='url(%23g)'/%3E%3C/svg%3E"/>
@@ -28,7 +26,7 @@
     "@type": "ProfessionalService",
     "name": "Nexus Softwares",
     "url": "https://nexussoftwares.co.ke",
-    "description": "Web development and IT consultancy based in Ruiru, Kenya.",
+    "description": "Zoho Books consultancy, eTIMS integration, and web development based in Ruiru, Kenya.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Ruiru",
@@ -38,7 +36,7 @@
     "telephone": "+254753223309",
     "email": "jeff.006760@gmail.com",
     "areaServed": ["Kenya", "East Africa"],
-    "serviceType": ["Web Development", "Landing Pages", "Business Websites", "Web Applications", "Social Media Management"],
+    "serviceType": ["Zoho Books Consultancy", "eTIMS Integration", "Business Automation", "Web Development"],
     "founder": { "@type": "Person", "name": "Jeff Wamakima" }
   }
   </script>
@@ -79,7 +77,7 @@
     }
     .skip-link:focus { top: 8px; left: 8px; }
 
-    /* ── NAV ── */
+    /* NAV */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       display: flex; align-items: center; justify-content: space-between;
@@ -119,7 +117,7 @@
     }
     .nav-cta:hover { background: var(--accent) !important; color: var(--white) !important; }
 
-    /* ── HERO ── */
+    /* HERO */
     .hero {
       min-height: 100vh;
       display: grid;
@@ -192,7 +190,6 @@
     .btn-ghost:hover,
     .btn-ghost:focus-visible { border-color: var(--ink); outline: none; }
 
-    /* right side of hero */
     .hero-desc {
       font-size: 1.05rem;
       color: var(--mid);
@@ -220,7 +217,71 @@
       color: var(--mid);
     }
 
-    /* ── SECTION COMMON ── */
+    /* CLIENTS STRIP */
+    .clients-strip {
+      background: var(--white);
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      padding: 40px 48px;
+    }
+    .clients-strip-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .clients-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 28px;
+      text-align: center;
+    }
+    .clients-logos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+    .client-logo-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .client-logo-circle {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid var(--rule);
+      background: var(--surface);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: border-color 0.15s, transform 0.15s;
+    }
+    .client-logo-circle:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .client-logo-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .client-logo-name {
+      font-size: 0.72rem;
+      font-weight: 500;
+      color: var(--mid);
+      text-align: center;
+      letter-spacing: 0.03em;
+      max-width: 80px;
+    }
+
+    /* SECTION COMMON */
     .section-inner {
       max-width: 1200px;
       margin: 0 auto;
@@ -250,8 +311,8 @@
       line-height: 1.15;
     }
 
-    /* ── ABOUT ── */
-    .about-section { background: var(--white); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+    /* ABOUT */
+    .about-section { background: var(--bg); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
     .about-grid {
       display: grid;
       grid-template-columns: 5fr 4fr;
@@ -272,13 +333,44 @@
     }
     .tag {
       padding: 5px 14px;
-      background: var(--bg);
+      background: var(--white);
       border: 1px solid var(--rule);
       border-radius: 2px;
       font-size: 0.75rem;
       font-weight: 500;
       letter-spacing: 0.04em;
       color: var(--ink);
+    }
+
+    .team-grid {
+      display: flex; gap: 16px;
+      margin-top: 36px;
+    }
+    .team-card {
+      flex: 1;
+      display: flex; align-items: center; gap: 14px;
+      padding: 16px 20px;
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+    }
+    .team-avatar {
+      width: 52px; height: 52px; flex-shrink: 0;
+      border-radius: 50%;
+      overflow: hidden;
+      background: var(--surface);
+      border: 2px solid var(--rule);
+    }
+    .team-avatar img {
+      width: 100%; height: 100%;
+      object-fit: cover; display: block;
+    }
+    .team-name {
+      font-weight: 600; font-size: 0.9rem; color: var(--ink);
+    }
+    .team-role {
+      font-size: 0.75rem; color: var(--mid);
+      letter-spacing: 0.04em; margin-top: 2px;
     }
 
     .about-right {}
@@ -303,46 +395,26 @@
       min-width: 0;
       flex: 1;
     }
+    .service-badge {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--white);
+      background: var(--accent);
+      padding: 2px 8px;
+      border-radius: 2px;
+      white-space: nowrap;
+    }
     .service-desc {
       font-size: 0.85rem;
       color: var(--mid);
       line-height: 1.5;
+      margin-top: 4px;
     }
 
-    /* ── TEAM ── */
-    .team-grid {
-      display: flex; gap: 16px;
-      margin-top: 36px;
-    }
-    .team-card {
-      flex: 1;
-      display: flex; align-items: center; gap: 14px;
-      padding: 16px 20px;
-      background: var(--bg);
-      border: 1px solid var(--rule);
-      border-radius: 2px;
-    }
-    .team-avatar {
-      width: 52px; height: 52px; flex-shrink: 0;
-      border-radius: 50%;
-      overflow: hidden;
-      background: var(--surface);
-      border: 2px solid var(--rule);
-    }
-    .team-avatar img {
-      width: 100%; height: 100%;
-      object-fit: cover; display: block;
-    }
-    .team-name {
-      font-weight: 600; font-size: 0.9rem; color: var(--ink);
-    }
-    .team-role {
-      font-size: 0.75rem; color: var(--mid);
-      letter-spacing: 0.04em; margin-top: 2px;
-    }
-
-    /* ── PORTFOLIO — editorial list ── */
-    .work-section { background: var(--bg); }
+    /* PORTFOLIO */
+    .work-section { background: var(--white); border-top: 1px solid var(--rule); }
     .work-table { width: 100%; border-collapse: collapse; }
     .work-table thead th {
       text-align: left;
@@ -403,7 +475,7 @@
     .work-link:focus-visible { text-decoration: underline; outline: none; }
     .work-link svg { width: 13px; height: 13px; }
 
-    /* ── CONTACT ── */
+    /* CONTACT */
     .contact-section { background: var(--ink); border-top: 1px solid #222; }
     .contact-section .section-inner { padding: 96px 48px; }
     .contact-section .section-header { border-bottom-color: #2A2A28; }
@@ -462,7 +534,7 @@
       margin-top: 2px;
     }
 
-    /* ── FOOTER ── */
+    /* FOOTER */
     footer {
       background: #0A0A09;
       border-top: 1px solid #1A1A18;
@@ -477,7 +549,7 @@
     .footer-brand svg { width: 20px; height: 20px; }
     footer small { font-size: 0.75rem; color: #444; }
 
-    /* ── RESPONSIVE ── */
+    /* RESPONSIVE */
     @media (max-width: 900px) {
       nav { padding: 0 24px; }
       nav ul { display: none; }
@@ -485,6 +557,8 @@
       .hero-left { padding: 60px 24px 40px; border-right: none; border-bottom: 1px solid var(--rule); }
       .hero-right { padding: 40px 24px 60px; }
       .section-inner { padding: 64px 24px; }
+      .clients-strip { padding: 32px 24px; }
+      .clients-logos { gap: 28px; }
       .about-grid { grid-template-columns: 1fr; gap: 48px; }
       .team-grid { flex-direction: column; }
       .work-table thead { display: none; }
@@ -548,31 +622,58 @@
 <!-- HERO -->
 <section class="hero" id="hero" aria-labelledby="hero-heading">
   <div class="hero-left">
-    <p class="hero-kicker">Web Development · Ruiru, Kenya</p>
+    <p class="hero-kicker">Zoho Consultancy · Ruiru, Kenya</p>
     <h1 class="hero-heading" id="hero-heading">
-      We build websites<br>that work <em>for</em><br>your business.
+      We make Zoho<br>work <em>properly</em><br>for your business.
     </h1>
     <div class="hero-actions">
-      <a href="#work" class="btn-primary">See our work</a>
+      <a href="#about" class="btn-primary">What we do</a>
       <a href="#contact" class="btn-ghost">Get in touch</a>
     </div>
   </div>
   <div class="hero-right">
     <p class="hero-desc">
-      Nexus Softwares is a web development company based in Ruiru, Kenya. We design and build fast, professional websites for businesses across Kenya — from landing pages to full web applications. Clean code, honest pricing, on-time delivery.
+      Nexus Softwares is a Zoho consultancy and web development company based in Ruiru, Kenya. We set up Zoho Books, connect businesses to KRA eTIMS, build automation workflows, and develop professional websites — so your systems run the way they should.
     </p>
     <div class="hero-stats" role="list" aria-label="Key figures">
+      <div role="listitem">
+        <div class="stat-num">3+</div>
+        <div class="stat-label">Zoho clients</div>
+      </div>
       <div role="listitem">
         <div class="stat-num">9+</div>
         <div class="stat-label">Sites launched</div>
       </div>
       <div role="listitem">
-        <div class="stat-num">2+</div>
-        <div class="stat-label">Years active</div>
-      </div>
-      <div role="listitem">
         <div class="stat-num">100%</div>
-        <div class="stat-label">Client satisfaction</div>
+        <div class="stat-label">eTIMS connected</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS STRIP -->
+<section class="clients-strip" aria-label="Our clients">
+  <div class="clients-strip-inner">
+    <p class="clients-label">Trusted by Kenyan businesses</p>
+    <div class="clients-logos">
+      <div class="client-logo-item">
+        <div class="client-logo-circle">
+          <img src="gsort.jpeg" alt="GSort Limited" width="72" height="72" loading="lazy">
+        </div>
+        <span class="client-logo-name">GSort Limited</span>
+      </div>
+      <div class="client-logo-item">
+        <div class="client-logo-circle">
+          <img src="techzone.jpeg" alt="Generations TechZone" width="72" height="72" loading="lazy">
+        </div>
+        <span class="client-logo-name">Generations TechZone</span>
+      </div>
+      <div class="client-logo-item">
+        <div class="client-logo-circle">
+          <img src="zarini.jpeg" alt="Zarini Beauty" width="72" height="72" loading="lazy">
+        </div>
+        <span class="client-logo-name">Zarini Beauty</span>
       </div>
     </div>
   </div>
@@ -589,19 +690,19 @@
       <div>
         <div class="about-body">
           <p>
-            <strong>Nexus Softwares</strong> was founded to give Kenyan businesses access to the same quality of web presence that larger companies take for granted. We work directly with clients — no middle layers — which means faster communication, faster delivery, and work we can put our names on.
+            <strong>Nexus Softwares</strong> was founded to give Kenyan businesses access to proper systems — not just software installations, but workflows that actually make sense for how the business operates. We work directly with clients, which means faster communication, faster delivery, and accountability.
           </p>
           <p>
-            We build in HTML, CSS, JavaScript, and Python/Flask. Every site we ship is mobile-first, fast-loading, and built without unnecessary bloat. If you need it maintained after launch, we do that too.
+            Our core work is Zoho Books consultancy — setting up accounts, configuring eTIMS integration for KRA compliance, building automation with Deluge, and training teams. We also build websites for clients who need a professional online presence.
           </p>
         </div>
-        <ul class="tags" aria-label="Technologies">
+        <ul class="tags" aria-label="Technologies and tools">
+          <li class="tag">Zoho Books</li>
+          <li class="tag">eTIMS / KRA</li>
+          <li class="tag">Deluge Automation</li>
           <li class="tag">HTML &amp; CSS</li>
           <li class="tag">JavaScript</li>
           <li class="tag">Python / Flask</li>
-          <li class="tag">Responsive Design</li>
-          <li class="tag">UI / UX</li>
-          <li class="tag">Web Apps</li>
         </ul>
         <div class="team-grid" role="list" aria-label="Our team">
           <div class="team-card" role="listitem">
@@ -629,38 +730,41 @@
         <p class="services-title">What we offer</p>
         <div class="service-row">
           <div>
-            <div class="service-name">Business Websites</div>
-            <div class="service-desc">Professional sites that represent your brand online.</div>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
+              <span class="service-name">Zoho Books Setup</span>
+              <span class="service-badge">Core</span>
+            </div>
+            <div class="service-desc">Full configuration of Zoho Books for your business — chart of accounts, items, customers, taxes, and reporting.</div>
           </div>
         </div>
         <div class="service-row">
           <div>
-            <div class="service-name">Landing Pages</div>
-            <div class="service-desc">Focused pages built to convert visitors into customers.</div>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
+              <span class="service-name">eTIMS Integration</span>
+              <span class="service-badge">Core</span>
+            </div>
+            <div class="service-desc">Connect your Zoho Books to KRA eTIMS for full compliance. We handle the setup, token requests, and branch connections.</div>
           </div>
         </div>
         <div class="service-row">
           <div>
-            <div class="service-name">Portfolio Sites</div>
-            <div class="service-desc">Personal branding websites for creatives and professionals.</div>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
+              <span class="service-name">Workflow Automation</span>
+              <span class="service-badge">Core</span>
+            </div>
+            <div class="service-desc">Custom Deluge scripts and automation rules that save your team hours every week.</div>
           </div>
         </div>
         <div class="service-row">
           <div>
-            <div class="service-name">Custom Web Apps</div>
-            <div class="service-desc">Functional applications built with Python, Flask, and more.</div>
+            <span class="service-name">Staff Training</span>
+            <div class="service-desc">On-site or remote training for your team on Zoho Books day-to-day operations.</div>
           </div>
         </div>
         <div class="service-row">
           <div>
-            <div class="service-name">Social Media Management</div>
-            <div class="service-desc">Strategy and execution across your social channels.</div>
-          </div>
-        </div>
-        <div class="service-row">
-          <div>
-            <div class="service-name">Website Maintenance</div>
-            <div class="service-desc">Ongoing updates and support after your site goes live.</div>
+            <span class="service-name">Web Development</span>
+            <div class="service-desc">Professional business websites and web applications built in HTML, CSS, JavaScript, and Python/Flask.</div>
           </div>
         </div>
       </div>
@@ -695,55 +799,20 @@
         </tr>
         <tr>
           <td class="work-idx">02</td>
-          <td><span class="work-name">Barber Queen</span></td>
-          <td><span class="work-client">Barbershop, Nairobi</span></td>
-          <td><span class="work-type">Landing Page</span></td>
-          <td class="work-link-cell"><a href="https://barber-queen.vercel.app/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="View Barber Queen (opens in new tab)">View <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></td>
-        </tr>
-        <tr>
-          <td class="work-idx">03</td>
-          <td><span class="work-name">Blink Sparkle Cleaners</span></td>
-          <td><span class="work-client">Cleaning Services, Kenya</span></td>
-          <td><span class="work-type">Business Website</span></td>
-          <td class="work-link-cell"><a href="https://blink-sparkle-cleaners.vercel.app/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="View Blink Sparkle Cleaners (opens in new tab)">View <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></td>
-        </tr>
-        <tr>
-          <td class="work-idx">04</td>
-          <td><span class="work-name">Crystal Cleaners</span></td>
-          <td><span class="work-client">Cleaning Services, Kenya</span></td>
-          <td><span class="work-type">Business Website</span></td>
-          <td class="work-link-cell"><a href="https://crystal-cleaners-ten.vercel.app/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="View Crystal Cleaners (opens in new tab)">View <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></td>
-        </tr>
-        <tr>
-          <td class="work-idx">05</td>
-          <td><span class="work-name">Kliniti Cleaners</span></td>
-          <td><span class="work-client">Cleaning &amp; Fumigation, Kenya</span></td>
-          <td><span class="work-type">Business Website</span></td>
-          <td class="work-link-cell"><a href="https://kliniti-cleaners.vercel.app/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="View Kliniti Cleaners (opens in new tab)">View <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></td>
-        </tr>
-        <tr>
-          <td class="work-idx">06</td>
-          <td><span class="work-name">Sparkle Sisters</span></td>
-          <td><span class="work-client">Cleaning &amp; Errands, Nairobi</span></td>
-          <td><span class="work-type">Business Website</span></td>
-          <td class="work-link-cell"><a href="https://sparkle-sisters-co.vercel.app/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="View Sparkle Sisters (opens in new tab)">View <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></td>
-        </tr>
-        <tr>
-          <td class="work-idx">07</td>
           <td><span class="work-name">Jazo Cleaners</span></td>
           <td><span class="work-client">Cleaning Services, Kenya</span></td>
           <td><span class="work-type">Business Website</span></td>
           <td class="work-link-cell"><a href="https://www.jazocleaners.co.ke/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="View Jazo Cleaners (opens in new tab)">View <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></td>
         </tr>
         <tr>
-          <td class="work-idx">08</td>
-          <td><span class="work-name">Fortune Future Cleaners</span></td>
-          <td><span class="work-client">Cleaning Services, Kenya</span></td>
-          <td><span class="work-type">Business Website</span></td>
-          <td class="work-link-cell"><a href="https://fortune-future-cleaners.vercel.app/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="View Fortune Future Cleaners (opens in new tab)">View <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></td>
+          <td class="work-idx">03</td>
+          <td><span class="work-name">Barber Queen</span></td>
+          <td><span class="work-client">Barbershop, Nairobi</span></td>
+          <td><span class="work-type">Landing Page</span></td>
+          <td class="work-link-cell"><a href="https://barber-queen.vercel.app/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="View Barber Queen (opens in new tab)">View <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></td>
         </tr>
         <tr>
-          <td class="work-idx">09</td>
+          <td class="work-idx">04</td>
           <td><span class="work-name">SpeedStar Movers</span></td>
           <td><span class="work-client">Moving &amp; Logistics, Kenya</span></td>
           <td><span class="work-type">Business Website</span></td>
@@ -759,10 +828,10 @@
   <div class="section-inner">
     <div class="section-header">
       <span class="section-label">Contact</span>
-      <h2 class="section-heading" id="contact-heading">Let's talk about your project.</h2>
+      <h2 class="section-heading" id="contact-heading">Let's talk about your business.</h2>
     </div>
     <p class="contact-intro">
-      Tell us what you need and we'll get back to you the same day. We work with businesses of all sizes across Kenya.
+      Whether you need Zoho Books set up, eTIMS connected, or a website built — tell us what you need and we'll get back to you the same day.
     </p>
     <address>
       <div class="contact-grid">
