@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nexus Softwares , Zoho Consultancy & Web Development, Kenya</title>
+  <title>Nexus Softwares - Zoho Consultancy and Web Development, Kenya</title>
   <meta name="description" content="Nexus Softwares helps Kenyan businesses implement Zoho Books, eTIMS integration, and automation. Based in Nairobi."/>
   <meta name="robots" content="index, follow"/>
   <link rel="canonical" href="https://nexussoftwares.co.ke/"/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://nexussoftwares.co.ke/"/>
-  <meta property="og:title" content="Nexus Softwares , Zoho Consultancy & Web Development, Kenya"/>
+  <meta property="og:title" content="Nexus Softwares - Zoho Consultancy and Web Development, Kenya"/>
   <meta property="og:description" content="Zoho Books setup, eTIMS integration, and business automation for Kenyan companies."/>
   <meta property="og:image" content="https://nexussoftwares.co.ke/og-image.jpg"/>
   <meta property="og:locale" content="en_KE"/>
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="Nexus Softwares , Zoho Consultancy, Kenya"/>
+  <meta name="twitter:title" content="Nexus Softwares - Zoho Consultancy, Kenya"/>
   <meta name="twitter:description" content="Zoho Books setup, eTIMS integration, and business automation for Kenyan companies."/>
   <meta name="twitter:image" content="https://nexussoftwares.co.ke/og-image.jpg"/>
 
@@ -37,25 +37,29 @@
     "email": "jeff.006760@gmail.com",
     "areaServed": ["Kenya", "East Africa"],
     "serviceType": ["Zoho Books Consultancy", "eTIMS Integration", "Business Automation", "Web Development"],
-    "CEO": { "@type": "Person", "name": "Jeff Wamakima" }
+    "founder": { "@type": "Person", "name": "Jeff Wamakima" }
   }
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!--
+    Space Grotesk: headings. Used by tech-forward brands, distinctive without being gimmicky.
+    Inter: body. Used by GitHub, Figma, Linear. The most trusted UI font in the industry.
+  -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:       #F7F6F3;
-      --surface:  #EEECEA;
-      --ink:      #111110;
-      --mid:      #6B6B67;
-      --rule:     #D8D6D1;
-      --accent:   #1B3A6B;
-      --white:    #FFFFFF;
+      --bg:      #F5F5F4;
+      --surface: #EBEBEA;
+      --ink:     #0F0F0E;
+      --mid:     #6B6B67;
+      --rule:    #D6D4CF;
+      --accent:  #1A3A6A;
+      --white:   #FFFFFF;
     }
 
     html { scroll-behavior: smooth; }
@@ -81,167 +85,229 @@
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       display: flex; align-items: center; justify-content: space-between;
-      padding: 0 48px;
+      padding: 0 52px;
       height: 64px;
-      background: var(--bg);
-      border-bottom: 1px solid var(--rule);
+      background: rgba(10,10,9,0.55);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255,255,255,0.07);
     }
     .nav-logo {
       display: flex; align-items: center; gap: 10px;
-      text-decoration: none; color: var(--ink);
+      text-decoration: none;
     }
-    .nav-logo svg { width: 28px; height: 28px; flex-shrink: 0; }
+    .nav-logo svg { width: 26px; height: 26px; flex-shrink: 0; }
     .nav-logo-name {
-      font-family: 'Instrument Serif', serif;
-      font-size: 1.1rem;
-      letter-spacing: 0.01em;
-      color: var(--ink);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--white);
+      letter-spacing: -0.01em;
     }
     nav ul { display: flex; gap: 32px; list-style: none; }
     nav ul a {
       text-decoration: none;
-      color: var(--mid);
+      color: rgba(255,255,255,0.6);
       font-size: 0.85rem;
       font-weight: 500;
-      letter-spacing: 0.01em;
       transition: color 0.15s;
     }
     nav ul a:hover,
-    nav ul a:focus-visible { color: var(--ink); outline: none; }
+    nav ul a:focus-visible { color: var(--white); outline: none; }
     .nav-cta {
-      background: var(--ink);
-      color: var(--white) !important;
-      padding: 8px 20px;
-      border-radius: 2px;
-      transition: background 0.15s !important;
+      background: var(--white) !important;
+      color: var(--ink) !important;
+      padding: 7px 18px;
+      border-radius: 6px;
+      font-weight: 600 !important;
+      font-size: 0.82rem !important;
     }
-    .nav-cta:hover { background: var(--accent) !important; color: var(--white) !important; }
+    .nav-cta:hover { opacity: 0.9; }
 
     /* HERO */
     .hero {
+      position: relative;
       min-height: 100vh;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      padding-top: 64px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
     }
-    .hero-left {
-      padding: 80px 48px 80px 48px;
-      display: flex; flex-direction: column; justify-content: center;
-      border-right: 1px solid var(--rule);
-    }
-    .hero-right {
-      padding: 80px 48px;
-      display: flex; flex-direction: column; justify-content: flex-end;
-    }
-    .hero-kicker {
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--mid);
-      margin-bottom: 28px;
-    }
-    .hero-heading {
-      font-family: 'Instrument Serif', serif;
-      font-size: clamp(3rem, 5.5vw, 5.5rem);
-      font-weight: 400;
-      line-height: 1.05;
-      letter-spacing: -0.02em;
-      color: var(--ink);
-      margin-bottom: 40px;
-    }
-    .hero-heading em {
-      font-style: italic;
-      color: var(--accent);
-    }
-    .hero-actions { display: flex; gap: 12px; align-items: center; }
-    .btn-primary {
-      display: inline-block;
-      padding: 12px 28px;
-      background: var(--ink);
-      color: var(--white);
-      font-size: 0.85rem;
-      font-weight: 600;
-      letter-spacing: 0.02em;
-      text-decoration: none;
-      border-radius: 2px;
-      border: 1px solid var(--ink);
-      transition: background 0.15s, color 0.15s;
-    }
-    .btn-primary:hover,
-    .btn-primary:focus-visible {
-      background: var(--accent);
-      border-color: var(--accent);
-      outline: none;
-    }
-    .btn-ghost {
-      display: inline-block;
-      padding: 12px 28px;
-      background: transparent;
-      color: var(--ink);
-      font-size: 0.85rem;
-      font-weight: 500;
-      letter-spacing: 0.02em;
-      text-decoration: none;
-      border-radius: 2px;
-      border: 1px solid var(--rule);
-      transition: border-color 0.15s, color 0.15s;
-    }
-    .btn-ghost:hover,
-    .btn-ghost:focus-visible { border-color: var(--ink); outline: none; }
 
-    .hero-desc {
-      font-size: 1.05rem;
-      color: var(--mid);
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 40%;
+      display: block;
+      z-index: 0;
+    }
+
+    /* Multi-stop overlay: dark at bottom where text is, lighter at top */
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        160deg,
+        rgba(5,5,5,0.30) 0%,
+        rgba(5,5,5,0.55) 55%,
+        rgba(5,5,5,0.90) 100%
+      );
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 72px 80px;
+      max-width: 1100px;
+    }
+
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 22px;
+      font-family: 'Inter', sans-serif;
+    }
+    .kicker-pill {
+      display: inline-block;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 100px;
+      padding: 3px 12px;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: rgba(255,255,255,0.75);
+    }
+
+    .hero-heading {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.4rem, 4.5vw, 4.4rem);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      color: var(--white);
+      margin-bottom: 22px;
+      max-width: 720px;
+    }
+
+    .hero-heading .accent-word {
+      color: #85B4FF;
+    }
+
+    .hero-subtext {
+      font-size: 1rem;
+      font-weight: 400;
+      color: rgba(255,255,255,0.65);
       line-height: 1.75;
-      max-width: 420px;
-      margin-bottom: 48px;
+      max-width: 500px;
+      margin-bottom: 36px;
+      font-family: 'Inter', sans-serif;
     }
-    .hero-stats {
-      display: flex; gap: 40px;
-      padding-top: 32px;
-      border-top: 1px solid var(--rule);
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 60px;
     }
+
+    .hero-stats-row {
+      display: flex;
+      gap: 0;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 28px;
+      max-width: 480px;
+    }
+    .hero-stat {
+      flex: 1;
+      padding-right: 28px;
+      border-right: 1px solid rgba(255,255,255,0.1);
+      margin-right: 28px;
+    }
+    .hero-stat:last-child { border-right: none; margin-right: 0; padding-right: 0; }
     .stat-num {
-      font-family: 'Instrument Serif', serif;
-      font-size: 2rem;
-      color: var(--ink);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--white);
       line-height: 1;
       margin-bottom: 4px;
+      letter-spacing: -0.02em;
     }
     .stat-label {
-      font-size: 0.75rem;
-      font-weight: 500;
-      letter-spacing: 0.06em;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: var(--mid);
+      color: rgba(255,255,255,0.4);
+      font-family: 'Inter', sans-serif;
     }
+
+    /* BUTTONS */
+    .btn-primary {
+      display: inline-block;
+      padding: 12px 26px;
+      background: var(--white);
+      color: var(--ink);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 6px;
+      border: 1px solid var(--white);
+      transition: opacity 0.15s;
+    }
+    .btn-primary:hover,
+    .btn-primary:focus-visible { opacity: 0.88; outline: none; }
+
+    .btn-ghost {
+      display: inline-block;
+      padding: 12px 26px;
+      background: transparent;
+      color: rgba(255,255,255,0.85);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-decoration: none;
+      border-radius: 6px;
+      border: 1px solid rgba(255,255,255,0.25);
+      transition: border-color 0.15s;
+    }
+    .btn-ghost:hover,
+    .btn-ghost:focus-visible { border-color: rgba(255,255,255,0.55); outline: none; }
 
     /* CLIENTS STRIP */
     .clients-strip {
       background: var(--white);
-      border-top: 1px solid var(--rule);
       border-bottom: 1px solid var(--rule);
-      padding: 40px 48px;
+      padding: 44px 52px;
     }
-    .clients-strip-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+    .clients-strip-inner { max-width: 1200px; margin: 0 auto; }
     .clients-label {
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 0.14em;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
       color: var(--mid);
       margin-bottom: 28px;
       text-align: center;
+      font-family: 'Inter', sans-serif;
     }
     .clients-logos {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 48px;
+      gap: 56px;
       flex-wrap: wrap;
     }
     .client-logo-item {
@@ -251,42 +317,26 @@
       gap: 10px;
     }
     .client-logo-circle {
-      width: 72px;
-      height: 72px;
+      width: 68px; height: 68px;
       border-radius: 50%;
       overflow: hidden;
       border: 2px solid var(--rule);
       background: var(--surface);
-      display: flex;
-      align-items: center;
-      justify-content: center;
       transition: border-color 0.15s, transform 0.15s;
     }
-    .client-logo-circle:hover {
-      border-color: var(--accent);
-      transform: translateY(-2px);
-    }
-    .client-logo-circle img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
+    .client-logo-circle:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .client-logo-circle img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .client-logo-name {
-      font-size: 0.72rem;
-      font-weight: 500;
+      font-size: 0.7rem;
+      font-weight: 600;
       color: var(--mid);
       text-align: center;
-      letter-spacing: 0.03em;
       max-width: 80px;
+      font-family: 'Inter', sans-serif;
     }
 
     /* SECTION COMMON */
-    .section-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 96px 48px;
-    }
+    .section-inner { max-width: 1200px; margin: 0 auto; padding: 96px 52px; }
     .section-header {
       display: flex;
       align-items: baseline;
@@ -296,19 +346,21 @@
       border-bottom: 1px solid var(--rule);
     }
     .section-label {
-      font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: 0.14em;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
       color: var(--mid);
       white-space: nowrap;
+      font-family: 'Inter', sans-serif;
     }
     .section-heading {
-      font-family: 'Instrument Serif', serif;
-      font-size: clamp(1.6rem, 2.5vw, 2.2rem);
-      font-weight: 400;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.5rem, 2.2vw, 1.9rem);
+      font-weight: 700;
       color: var(--ink);
-      line-height: 1.15;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
     }
 
     /* ABOUT */
@@ -319,245 +371,165 @@
       gap: 80px;
       align-items: start;
     }
-    .about-body {
-      color: var(--mid);
-      font-size: 1rem;
-      line-height: 1.85;
-    }
-    .about-body p + p { margin-top: 18px; }
+    .about-body { color: var(--mid); font-size: 0.975rem; line-height: 1.85; }
+    .about-body p + p { margin-top: 16px; }
     .about-body strong { color: var(--ink); font-weight: 600; }
 
-    .tags {
-      display: flex; flex-wrap: wrap; gap: 8px;
-      margin-top: 28px; list-style: none;
-    }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; list-style: none; }
     .tag {
-      padding: 5px 14px;
+      padding: 5px 13px;
       background: var(--white);
       border: 1px solid var(--rule);
-      border-radius: 2px;
-      font-size: 0.75rem;
-      font-weight: 500;
-      letter-spacing: 0.04em;
+      border-radius: 6px;
+      font-size: 0.73rem;
+      font-weight: 600;
       color: var(--ink);
+      font-family: 'Inter', sans-serif;
     }
 
-    .team-grid {
-      display: flex; gap: 16px;
-      margin-top: 36px;
-    }
+    .team-grid { display: flex; gap: 14px; margin-top: 32px; }
     .team-card {
       flex: 1;
-      display: flex; align-items: center; gap: 14px;
-      padding: 16px 20px;
+      display: flex; align-items: center; gap: 13px;
+      padding: 14px 18px;
       background: var(--white);
       border: 1px solid var(--rule);
-      border-radius: 2px;
+      border-radius: 8px;
     }
     .team-avatar {
-      width: 52px; height: 52px; flex-shrink: 0;
+      width: 48px; height: 48px; flex-shrink: 0;
       border-radius: 50%;
       overflow: hidden;
       background: var(--surface);
       border: 2px solid var(--rule);
     }
-    .team-avatar img {
-      width: 100%; height: 100%;
-      object-fit: cover; display: block;
-    }
-    .team-name {
-      font-weight: 600; font-size: 0.9rem; color: var(--ink);
-    }
-    .team-role {
-      font-size: 0.75rem; color: var(--mid);
-      letter-spacing: 0.04em; margin-top: 2px;
-    }
+    .team-avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .team-name { font-weight: 600; font-size: 0.875rem; color: var(--ink); font-family: 'Inter', sans-serif; }
+    .team-role { font-size: 0.72rem; color: var(--mid); margin-top: 1px; font-family: 'Inter', sans-serif; }
 
-    .about-right {}
     .services-title {
-      font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
       color: var(--mid);
-      margin-bottom: 20px;
+      margin-bottom: 18px;
+      font-family: 'Inter', sans-serif;
     }
-    .service-row {
-      display: flex; align-items: flex-start; gap: 16px;
-      padding: 16px 0;
-      border-bottom: 1px solid var(--rule);
-    }
+    .service-row { padding: 16px 0; border-bottom: 1px solid var(--rule); }
     .service-row:first-of-type { border-top: 1px solid var(--rule); }
-    .service-name {
-      font-weight: 600;
-      font-size: 0.9rem;
-      color: var(--ink);
-      min-width: 0;
-      flex: 1;
-    }
+    .service-top { display: flex; align-items: center; gap: 10px; margin-bottom: 4px; }
+    .service-name { font-weight: 600; font-size: 0.875rem; color: var(--ink); font-family: 'Inter', sans-serif; }
     .service-badge {
-      font-size: 0.65rem;
-      font-weight: 600;
+      font-size: 0.6rem;
+      font-weight: 700;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: var(--white);
       background: var(--accent);
-      padding: 2px 8px;
-      border-radius: 2px;
-      white-space: nowrap;
+      padding: 2px 7px;
+      border-radius: 4px;
     }
-    .service-desc {
-      font-size: 0.85rem;
-      color: var(--mid);
-      line-height: 1.5;
-      margin-top: 4px;
-    }
+    .service-desc { font-size: 0.83rem; color: var(--mid); line-height: 1.55; font-family: 'Inter', sans-serif; }
 
-    /* PORTFOLIO */
+    /* WORK TABLE */
     .work-section { background: var(--white); border-top: 1px solid var(--rule); }
     .work-table { width: 100%; border-collapse: collapse; }
     .work-table thead th {
       text-align: left;
-      font-size: 0.7rem;
-      font-weight: 600;
+      font-size: 0.68rem;
+      font-weight: 700;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--mid);
       padding: 0 0 14px;
       border-bottom: 1px solid var(--rule);
+      font-family: 'Inter', sans-serif;
     }
     .work-table thead th:last-child { text-align: right; }
-    .work-table tbody tr {
-      border-bottom: 1px solid var(--rule);
-      transition: background 0.12s;
-    }
-    .work-table tbody tr:hover { background: var(--surface); }
-    .work-table td {
-      padding: 20px 0;
-      vertical-align: middle;
-    }
+    .work-table tbody tr { border-bottom: 1px solid var(--rule); transition: background 0.1s; }
+    .work-table tbody tr:hover { background: var(--bg); }
+    .work-table td { padding: 20px 0; vertical-align: middle; }
     .work-table td:not(:first-child) { padding-left: 24px; }
-    .work-idx {
-      font-size: 0.75rem;
-      color: var(--mid);
-      font-variant-numeric: tabular-nums;
-      width: 32px;
-    }
-    .work-name {
-      font-family: 'Instrument Serif', serif;
-      font-size: 1.1rem;
-      color: var(--ink);
-    }
-    .work-client {
-      font-size: 0.82rem;
-      color: var(--mid);
-    }
+    .work-idx { font-size: 0.72rem; color: var(--mid); width: 30px; font-family: 'Inter', sans-serif; }
+    .work-name { font-family: 'Space Grotesk', sans-serif; font-size: 1rem; font-weight: 600; color: var(--ink); letter-spacing: -0.01em; }
+    .work-client { font-size: 0.8rem; color: var(--mid); font-family: 'Inter', sans-serif; }
     .work-type {
-      font-size: 0.75rem;
-      font-weight: 500;
+      font-size: 0.7rem; font-weight: 600;
       padding: 4px 10px;
       background: var(--bg);
       border: 1px solid var(--rule);
-      border-radius: 2px;
+      border-radius: 5px;
       color: var(--mid);
       white-space: nowrap;
       display: inline-block;
+      font-family: 'Inter', sans-serif;
     }
     .work-link-cell { text-align: right; }
     .work-link {
-      display: inline-flex; align-items: center; gap: 6px;
-      font-size: 0.8rem; font-weight: 600;
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 0.78rem; font-weight: 600;
       color: var(--accent);
       text-decoration: none;
-      letter-spacing: 0.02em;
+      font-family: 'Inter', sans-serif;
     }
     .work-link:hover,
     .work-link:focus-visible { text-decoration: underline; outline: none; }
     .work-link svg { width: 13px; height: 13px; }
 
     /* CONTACT */
-    .contact-section { background: var(--ink); border-top: 1px solid #222; }
-    .contact-section .section-inner { padding: 96px 48px; }
-    .contact-section .section-header { border-bottom-color: #2A2A28; }
-    .contact-section .section-label { color: #666; }
+    .contact-section { background: var(--ink); }
+    .contact-section .section-inner { padding: 96px 52px; }
+    .contact-section .section-header { border-bottom-color: #252524; }
+    .contact-section .section-label { color: #555; }
     .contact-section .section-heading { color: var(--white); }
-    .contact-intro {
-      font-size: 1.05rem;
-      color: #888;
-      line-height: 1.75;
-      max-width: 440px;
-      margin-bottom: 48px;
-    }
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      max-width: 640px;
-    }
+    .contact-intro { font-size: 0.975rem; color: #888; line-height: 1.75; max-width: 420px; margin-bottom: 44px; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; max-width: 600px; }
     .contact-item {
       display: flex; align-items: center; gap: 14px;
-      padding: 18px 22px;
-      background: #1A1A18;
-      border: 1px solid #2A2A28;
-      border-radius: 2px;
+      padding: 16px 20px;
+      background: #181817;
+      border: 1px solid #252524;
+      border-radius: 8px;
       text-decoration: none;
       color: var(--white);
       transition: border-color 0.15s, background 0.15s;
     }
     .contact-item:hover,
-    .contact-item:focus-visible {
-      border-color: #444;
-      background: #222220;
-      outline: none;
-    }
+    .contact-item:focus-visible { border-color: #3A3A38; background: #1F1F1E; outline: none; }
     .contact-icon {
-      width: 36px; height: 36px; flex-shrink: 0;
+      width: 34px; height: 34px; flex-shrink: 0;
       display: flex; align-items: center; justify-content: center;
-      border: 1px solid #2A2A28;
-      border-radius: 2px;
-      color: #888;
-    }
-    .contact-icon svg { width: 16px; height: 16px; }
-    .contact-lbl {
-      font-size: 0.68rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
+      border: 1px solid #252524;
+      border-radius: 6px;
       color: #666;
-      display: block;
     }
-    .contact-val {
-      font-size: 0.88rem;
-      font-weight: 500;
-      color: #CCC;
-      display: block;
-      margin-top: 2px;
-    }
+    .contact-icon svg { width: 15px; height: 15px; }
+    .contact-lbl { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #555; display: block; font-family: 'Inter', sans-serif; }
+    .contact-val { font-size: 0.85rem; font-weight: 500; color: #BBB; display: block; margin-top: 2px; font-family: 'Inter', sans-serif; }
 
     /* FOOTER */
     footer {
-      background: #0A0A09;
-      border-top: 1px solid #1A1A18;
-      padding: 24px 48px;
+      background: #090908;
+      border-top: 1px solid #181817;
+      padding: 22px 52px;
       display: flex; align-items: center; justify-content: space-between;
     }
     .footer-brand {
       display: flex; align-items: center; gap: 8px;
-      font-family: 'Instrument Serif', serif;
-      font-size: 0.9rem; color: #444;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.875rem; font-weight: 600; color: #3A3A38;
     }
     .footer-brand svg { width: 20px; height: 20px; }
-    footer small { font-size: 0.75rem; color: #444; }
+    footer small { font-size: 0.72rem; color: #3A3A38; font-family: 'Inter', sans-serif; }
 
     /* RESPONSIVE */
     @media (max-width: 900px) {
       nav { padding: 0 24px; }
       nav ul { display: none; }
-      .hero { grid-template-columns: 1fr; min-height: auto; }
-      .hero-left { padding: 60px 24px 40px; border-right: none; border-bottom: 1px solid var(--rule); }
-      .hero-right { padding: 40px 24px 60px; }
+      .hero-content { padding: 0 24px 56px; }
       .section-inner { padding: 64px 24px; }
-      .clients-strip { padding: 32px 24px; }
+      .clients-strip { padding: 36px 24px; }
       .clients-logos { gap: 28px; }
       .about-grid { grid-template-columns: 1fr; gap: 48px; }
       .team-grid { flex-direction: column; }
@@ -567,18 +539,6 @@
       .work-link-cell { text-align: left; }
       .contact-grid { grid-template-columns: 1fr; }
       footer { padding: 20px 24px; flex-direction: column; gap: 8px; text-align: center; }
-    }
-
-    @media (prefers-reduced-motion: no-preference) {
-      @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(16px); }
-        to   { opacity: 1; transform: translateY(0); }
-      }
-      .hero-kicker  { animation: fadeIn 0.5s 0.05s ease both; }
-      .hero-heading { animation: fadeIn 0.5s 0.15s ease both; }
-      .hero-actions { animation: fadeIn 0.5s 0.25s ease both; }
-      .hero-desc    { animation: fadeIn 0.5s 0.15s ease both; }
-      .hero-stats   { animation: fadeIn 0.5s 0.3s  ease both; }
     }
 
     @media print {
@@ -593,7 +553,7 @@
 
 <!-- NAV -->
 <nav role="navigation" aria-label="Main navigation">
-  <a href="#hero" class="nav-logo" aria-label="Nexus Softwares , home">
+  <a href="#hero" class="nav-logo" aria-label="Nexus Softwares home">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
       <defs>
         <linearGradient id="ng" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -619,32 +579,49 @@
 
 <main id="main-content">
 
-<!-- HERO -->
+<!-- HERO
+     Image: person working at dark desk with financial dashboard/data on screen.
+     Source: Unsplash photo by Lukas Blazek (photo-1517694712202-14dd9538aa97)
+     This directly represents what Nexus does: business software, data, consultancy.
+-->
 <section class="hero" id="hero" aria-labelledby="hero-heading">
-  <div class="hero-left">
-    <p class="hero-kicker">Zoho Consultancy · Nairobi, Kenya</p>
+  <img
+    class="hero-bg"
+    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1800&q=85&fit=crop&crop=center"
+    alt=""
+    aria-hidden="true"
+    width="1800"
+    height="1200"
+    fetchpriority="high"
+  >
+  <div class="hero-overlay" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <p class="hero-kicker">
+      <span class="kicker-pill">Nairobi, Kenya</span>
+      Zoho Consultancy
+    </p>
     <h1 class="hero-heading" id="hero-heading">
-      We make Zoho<br>work <em>properly</em><br>for your business.
+      We make Zoho work<br><span class="accent-word">properly</span> for your business.
     </h1>
+    <p class="hero-subtext">
+      Zoho Books setup, KRA eTIMS integration, Deluge automation, and professional websites. We work directly with your team in Nairobi.
+    </p>
     <div class="hero-actions">
       <a href="#about" class="btn-primary">What we do</a>
       <a href="#contact" class="btn-ghost">Get in touch</a>
     </div>
-  </div>
-  <div class="hero-right">
-    <p class="hero-desc">
-      Nexus Softwares is a Zoho consultancy and web development company based in Nairobi, Kenya. We set up Zoho Books, connect businesses to KRA eTIMS, build automation workflows, and develop professional websites , so your systems run the way they should.
-    </p>
-    <div class="hero-stats" role="list" aria-label="Key figures">
-      <div role="listitem">
+
+    <div class="hero-stats-row" role="list" aria-label="Key figures">
+      <div class="hero-stat" role="listitem">
         <div class="stat-num">3+</div>
         <div class="stat-label">Zoho clients</div>
       </div>
-      <div role="listitem">
+      <div class="hero-stat" role="listitem">
         <div class="stat-num">9+</div>
         <div class="stat-label">Sites launched</div>
       </div>
-      <div role="listitem">
+      <div class="hero-stat" role="listitem">
         <div class="stat-num">100%</div>
         <div class="stat-label">eTIMS connected</div>
       </div>
@@ -652,26 +629,26 @@
   </div>
 </section>
 
-<!-- CLIENTS STRIP -->
+<!-- CLIENTS -->
 <section class="clients-strip" aria-label="Our clients">
   <div class="clients-strip-inner">
     <p class="clients-label">Trusted by Kenyan businesses</p>
     <div class="clients-logos">
       <div class="client-logo-item">
         <div class="client-logo-circle">
-          <img src="gsort.jpeg" alt="GSort Limited" width="72" height="72" loading="lazy">
+          <img src="gsort.jpeg" alt="GSort Limited" width="68" height="68" loading="lazy">
         </div>
         <span class="client-logo-name">GSort Limited</span>
       </div>
       <div class="client-logo-item">
         <div class="client-logo-circle">
-          <img src="techzone.jpeg" alt="Generations TechZone" width="72" height="72" loading="lazy">
+          <img src="techzone.jpeg" alt="Generations TechZone" width="68" height="68" loading="lazy">
         </div>
         <span class="client-logo-name">Generations TechZone</span>
       </div>
       <div class="client-logo-item">
         <div class="client-logo-circle">
-          <img src="zarini.jpeg" alt="Zarini Beauty" width="72" height="72" loading="lazy">
+          <img src="zarini.jpeg" alt="Zarini Beauty" width="68" height="68" loading="lazy">
         </div>
         <span class="client-logo-name">Zarini Beauty</span>
       </div>
@@ -690,10 +667,10 @@
       <div>
         <div class="about-body">
           <p>
-            <strong>Nexus Softwares</strong> was founded to give Kenyan businesses access to proper systems , not just software installations, but workflows that actually make sense for how the business operates. We work directly with clients, which means faster communication, faster delivery, and accountability.
+            <strong>Nexus Softwares</strong> was founded to give Kenyan businesses access to proper systems, not just software installations, but workflows that actually make sense for how the business operates. We work directly with clients, which means faster communication, faster delivery, and full accountability.
           </p>
           <p>
-            Our core work is Zoho Books consultancy , setting up accounts, configuring eTIMS integration for KRA compliance, building automation with Deluge, and training teams. We also build websites for clients who need a professional online presence.
+            Our core work is Zoho Books consultancy: setting up accounts, configuring eTIMS integration for KRA compliance, building automation with Deluge, and training teams. We also build websites for clients who need a professional online presence.
           </p>
         </div>
         <ul class="tags" aria-label="Technologies and tools">
@@ -707,7 +684,7 @@
         <div class="team-grid" role="list" aria-label="Our team">
           <div class="team-card" role="listitem">
             <div class="team-avatar">
-              <img src="jeff.jpeg" alt="Jeff Wamakima" width="52" height="52" loading="lazy">
+              <img src="jeff.jpeg" alt="Jeff Wamakima" width="48" height="48" loading="lazy">
             </div>
             <div>
               <div class="team-name">Jeff Wamakima</div>
@@ -716,7 +693,7 @@
           </div>
           <div class="team-card" role="listitem">
             <div class="team-avatar">
-              <img src="elisha.jpeg" alt="Elisha Wera" width="52" height="52" loading="lazy">
+              <img src="elisha.jpeg" alt="Elisha Wera" width="48" height="48" loading="lazy">
             </div>
             <div>
               <div class="team-name">Elisha Wera</div>
@@ -726,46 +703,40 @@
         </div>
       </div>
 
-      <div class="about-right" role="region" aria-label="Services">
+      <div role="region" aria-label="Services">
         <p class="services-title">What we offer</p>
         <div class="service-row">
-          <div>
-            <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
-              <span class="service-name">Zoho Books Setup</span>
-              <span class="service-badge">Core</span>
-            </div>
-            <div class="service-desc">Full configuration of Zoho Books for your business , chart of accounts, items, customers, taxes, and reporting.</div>
+          <div class="service-top">
+            <span class="service-name">Zoho Books Setup</span>
+            <span class="service-badge">Core</span>
           </div>
+          <div class="service-desc">Full configuration of Zoho Books: chart of accounts, items, customers, taxes, and reporting.</div>
         </div>
         <div class="service-row">
-          <div>
-            <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
-              <span class="service-name">eTIMS Integration</span>
-              <span class="service-badge">Core</span>
-            </div>
-            <div class="service-desc">Connect your Zoho Books to KRA eTIMS for full compliance. We handle the setup, token requests, and branch connections.</div>
+          <div class="service-top">
+            <span class="service-name">eTIMS Integration</span>
+            <span class="service-badge">Core</span>
           </div>
+          <div class="service-desc">Connect Zoho Books to KRA eTIMS for full compliance. We handle setup, token requests, and branch connections.</div>
         </div>
         <div class="service-row">
-          <div>
-            <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
-              <span class="service-name">Workflow Automation</span>
-              <span class="service-badge">Core</span>
-            </div>
-            <div class="service-desc">Custom Deluge scripts and automation rules that save your team hours every week.</div>
+          <div class="service-top">
+            <span class="service-name">Workflow Automation</span>
+            <span class="service-badge">Core</span>
           </div>
+          <div class="service-desc">Custom Deluge scripts and automation rules that save your team hours every week.</div>
         </div>
         <div class="service-row">
-          <div>
+          <div class="service-top">
             <span class="service-name">Staff Training</span>
-            <div class="service-desc">On-site or remote training for your team on Zoho Books day-to-day operations.</div>
           </div>
+          <div class="service-desc">On-site or remote training for your team on Zoho Books day-to-day operations.</div>
         </div>
         <div class="service-row">
-          <div>
+          <div class="service-top">
             <span class="service-name">Web Development</span>
-            <div class="service-desc">Professional business websites and web applications built in HTML, CSS, JavaScript, and Python/Flask.</div>
           </div>
+          <div class="service-desc">Professional business websites and web applications built in HTML, CSS, JavaScript, and Python/Flask.</div>
         </div>
       </div>
     </div>
@@ -831,7 +802,7 @@
       <h2 class="section-heading" id="contact-heading">Let's talk about your business.</h2>
     </div>
     <p class="contact-intro">
-      Whether you need Zoho Books set up, eTIMS connected, or a website built , tell us what you need and we'll get back to you the same day.
+      Whether you need Zoho Books set up, eTIMS connected, or a website built, tell us what you need and we'll get back to you the same day.
     </p>
     <address>
       <div class="contact-grid">
@@ -858,7 +829,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 17z"/></svg>
           </span>
           <span>
-            <span class="contact-lbl">Call , CEO</span>
+            <span class="contact-lbl">Call, CEO</span>
             <span class="contact-val">+254 753 223 309</span>
           </span>
         </a>
@@ -867,7 +838,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 17z"/></svg>
           </span>
           <span>
-            <span class="contact-lbl">Call , Director</span>
+            <span class="contact-lbl">Call, Director</span>
             <span class="contact-val">+254 728 566 880</span>
           </span>
         </a>
